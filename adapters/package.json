@@ -1,0 +1,30 @@
+{
+  "name": "lcu-harness-adapters",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Connect Pi, Codex CLI, Claude Code, oh-my-pi, and Hermes to the installed OpenAI computer-use runtime.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amontlabs/lcu.git",
+    "directory": "adapters"
+  },
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": { "optional": true },
+    "typebox": { "optional": true }
+  },
+  "scripts": {
+    "test": "node --test --import ./test/no-diagnostic-log.mjs test/*.test.mjs"
+  },
+  "pi": {
+    "extensions": ["./pi/index.ts"]
+  }
+}

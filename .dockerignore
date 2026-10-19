@@ -1,0 +1,6 @@
+.git
+.verification
+.runtime
+__pycache__
+*.deb
+dist

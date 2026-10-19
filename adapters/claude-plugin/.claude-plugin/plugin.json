@@ -1,0 +1,11 @@
+{
+  "name": "lcu",
+  "version": "0.1.0",
+  "description": "Codex computer use in Claude Code. Installs LCU from its latest release when it is missing, then registers it with `lcu setup --agent claude-code`.",
+  "author": {
+    "name": "LCU"
+  },
+  "homepage": "https://github.com/amontlabs/lcu",
+  "repository": "https://github.com/amontlabs/lcu",
+  "license": "MIT"
+}

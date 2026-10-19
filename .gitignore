@@ -1,0 +1,12 @@
+.DS_Store
+/.claude/settings.local.json
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.runtime/
+.verification/
+*.deb
+*.tar.*
+dist/
+tests/macos_native_fixture.bin

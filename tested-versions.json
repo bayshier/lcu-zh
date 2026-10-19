@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "note": "Pairs of installed ChatGPT app version and CUA runtime version that LCU's own verification records cover. Informational: LCU never refuses an untested pair. app_sha256 is the SHA-256 of the official .deb the pair was tested from; the installed tree is not hashed, so it is not matched at run time.",
+  "entries": [
+    {
+      "platform": "linux",
+      "architecture": "arm64",
+      "app_version": "26.915.31945",
+      "runtime": "0.0.16/20260915001755-492f19756c31",
+      "app_sha256": "b94c494b5f0fd7c720fa6fccd5ef609879affc62332ca930ed29b907d537bc6d",
+      "lcu_version": "0.7.0",
+      "evidence": "docs/releases/0.7.0.md"
+    },
+    {
+      "platform": "linux",
+      "architecture": "x64",
+      "app_version": "26.915.31945",
+      "runtime": "0.0.16/20260915001755-492f19756c31",
+      "app_sha256": "d27a9c02919cfe484dcc5f34584b9ea9fd0d7a65c69dcc872b5bdcfa0efb5983",
+      "lcu_version": "0.7.0",
+      "evidence": "docs/releases/0.7.0.md"
+    },
+    {
+      "platform": "linux",
+      "architecture": "arm64",
+      "app_version": "26.928.31416",
+      "runtime": "0.0.27/20260927214556-b77d38801cca",
+      "app_sha256": "b3c3f37dedfc57db72e810a1dc5be7b22586f0b99b7d4875868b06bdd855ba86",
+      "lcu_version": "0.8.0",
+      "evidence": "docs/releases/0.8.0.md"
+    },
+    {
+      "platform": "linux",
+      "architecture": "x64",
+      "app_version": "26.928.31416",
+      "runtime": "0.0.27/20260927214556-b77d38801cca",
+      "app_sha256": "c463727f1ed5dced78338c8e2a65d889bd153276ff373fd77698ccb9af32d181",
+      "lcu_version": "0.8.0",
+      "evidence": "docs/releases/0.8.0.md"
+    },
+    {
+      "platform": "darwin",
+      "architecture": "arm64",
+      "app_version": "26.917.62051",
+      "runtime": "0.0.16/20260915001755-492f19756c31",
+      "lcu_version": "0.3.0",
+      "evidence": "docs/verification/macos-fresh-guest-2026-09-24.md"
+    },
+    {
+      "platform": "darwin",
+      "architecture": "arm64",
+      "app_version": "26.928.20755",
+      "runtime": "0.0.27/20260927214556-b77d38801cca",
+      "lcu_version": "0.7.0",
+      "evidence": "docs/releases/0.7.0.md"
+    },
+    {
+      "platform": "darwin",
+      "architecture": "arm64",
+      "app_version": "26.1007.30912",
+      "runtime": "0.0.29/20261005054403-144090e2ddcb",
+      "lcu_version": "0.11.2",
+      "evidence": "docs/verification/macos-chatgpt-26.1007-2026-10-12.md"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 200 200" role="img" aria-label="LCU">
+  <defs>
+    <linearGradient id="bg" x1="0.18" y1="0" x2="0.82" y2="1">
+      <stop offset="0" stop-color="#6FA8FF"/>
+      <stop offset="0.52" stop-color="#7D5CFF"/>
+      <stop offset="1" stop-color="#C95BFF"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.7" stop-color="#28007A" stop-opacity="0"/>
+      <stop offset="1" stop-color="#28007A" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="glyph" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#2A0A8A" flood-opacity="0.35"/>
+    </filter>
+    <clipPath id="sq"><rect width="200" height="200" rx="52"/></clipPath>
+  </defs>
+  <g clip-path="url(#sq)">
+    <rect width="200" height="200" fill="url(#bg)"/>
+    <rect width="200" height="200" fill="url(#shade)"/>
+    <rect width="200" height="200" fill="url(#gloss)"/>
+    <rect x="0.5" y="1.5" width="199" height="197" rx="51.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/>
+  </g>
+  <path transform="translate(62 44) scale(3.25)" filter="url(#glyph)" fill="#FFFFFF"
+        d="M5 3 L5 25.6 L10.7 20.3 L14.4 28.7 L18.3 27 L14.7 18.9 L22.4 18.9 Z"/>
+</svg>

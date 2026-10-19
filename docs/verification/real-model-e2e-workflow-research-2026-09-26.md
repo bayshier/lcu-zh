@@ -1,0 +1,21 @@
+# Real-model E2E workflow research
+
+Reviewed 2026-09-26. Recommendation: first make a local, one-command scenario runner that uses each real harness CLI, the original LCU runtime and approvals, and an independent oracle over a generated fixture. Keep it executable without Smithers. Add Smithers only as an optional thin wrapper after the native runner works; its workflow must launch the actual CLI and must not substitute Smithers’ own agent or tool path.
+
+Current Smithers docs describe 1.0.0-rc.0, while npm still publishes 0.35.0. The RC needs Node 26.4+ and local SQLite; its support matrix marks Linux required, macOS advisory, and Windows unsupported. Module flows use typed Flow/Action declarations and a registered Action implementation layer; discovery alone does not install custom action code. Thus the useful shape is one Smithers action invoking the independent scenario runner. Smithers adds run journaling and process cleanup, but not LCU setup, native approvals, the fixture oracle, or a cross-OS matrix.
+
+Use GLM-5.3-Flash as the proposed vision-capable model through each vendor’s own CLI adapter. These routes are config proposals, not live-verified:
+
+- Codex: Z.ai Responses endpoint https://api.z.ai/api/v1, wire_api set to responses, and a custom provider/model in isolated user-level CODEX_HOME config. Reference the secret through an environment key. Flash model-catalog and image modality entries are unverified adaptations; Z.ai’s Codex example documents text-only GLM-5.3.
+- Claude Code: ANTHROPIC_BASE_URL=https://api.z.ai/api/anthropic, ANTHROPIC_AUTH_TOKEN from the Coding Plan key, and model override variables. Use interactive default permission mode for native approval.
+- Pi: built-in zai provider with ZAI_API_KEY; PI_CODING_AGENT_DIR points to a per-run directory containing models.json to add GLM-5.3-Flash. Keep the existing LCU Pi approval extension.
+
+A fresh run needs a unique ID, temp fixture/profile, and randomized challenge; capture exact CLI/app versions and resolved installation paths; run harnesses sequentially; keep redacted transcripts and traces; independently verify the saved fixture; and clean up only processes started by the test. Report PASS, FAIL, or UNAVAILABLE and retain failures. A Smithers resume replays durable completed actions, so it cannot count as a fresh model pass. Do not cache or share the live E2E action result.
+
+CLI environment overrides do not necessarily isolate LCU installation. Current lcu/setup.py rejects CLAUDE_CONFIG_DIR for its bundled Claude installer unless export mode is used, resolves account HOME through pwd, and does not document PI_CODING_AGENT_DIR as installer isolation. Use a supported export setup or disposable real account/container, then inspect actual registrations before launch; do not blindly override HOME.
+
+The first live proof should be small: pass a newly generated screenshot with an exact visible marker through the actual harness to GLM-5.3-Flash, require the model to report that marker, have it perform one reversible LCU-native save into the fixture, then verify saved content and lifecycle with an independent oracle. PNG transport alone is not proof of model vision. Codex Responses and Claude Anthropic Messages image payload support remain unverified.
+
+Primary references: [Smithers install](https://smithers.sh/docs/installation/), [module flows](https://smithers.sh/docs/guides/module-flows/), [Node process API](https://smithers.sh/docs/reference/api/platform-node/), [RC support matrix](https://smithers.sh/docs/reference/support-matrix/), [flow CLI](https://smithers.sh/docs/reference/cli/flow/), [Smithers CI](https://smithers.sh/docs/guides/ci/), [Z.ai Codex](https://docs.z.ai/devpack/tool/codex), [Z.ai Claude](https://docs.z.ai/devpack/tool/claude), [Z.ai Pi](https://docs.z.ai/devpack/tool/pi), [GLM-5.3-Flash](https://docs.z.ai/guides/vlm/glm-5.3-flash), [Coding Plan terms](https://docs.z.ai/legal-agreement/subscription-terms), [Codex config](https://developers.openai.com/codex/config-reference/), [Claude CLI](https://code.claude.com/docs/en/cli-reference).
+
+Existing evidence: [harness results](./harness-results-2026-09-26.md), [Pi approval](./pi-approval-2026-09-26.md), and [Codex approval](./codex-native-approval-2026-09-25.md).

@@ -1,0 +1,15 @@
+Usage: lcu [--chrome] [--audio] [--mcp-discovery-compat]
+       lcu setup OPTIONS
+       lcu browser install
+       lcu browser status
+       lcu apps [list|allow APP|revoke APP] [--json]   (macOS)
+       lcu cross-turn [status|on|off] [--json] [--unattended]
+       lcu origins [list [--session ID] [--json]]
+       lcu origins forget ORIGIN [--session ID | --all-sessions] [--allowed | --denied]
+       lcu prune [--keep N] [--yes]
+       lcu update [--check [--json]] [--yes]
+       lcu doctor
+       lcu status [--json]
+       lcu --version
+
+With no arguments, starts the original computer-use stdio MCP server. `lcu --chrome` also enables its browser surface; `lcu setup --chrome` registers that command. `lcu --audio` enables the original optional computer-audio API; `lcu setup --audio` registers that command.

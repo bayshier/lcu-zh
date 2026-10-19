@@ -1,0 +1,80 @@
+{
+  "status": "incomplete; both full gates stopped on Electron fixture cleanup race after passing auth checks",
+  "runtime_package": "26.915.31945",
+  "source_manifest_sha256": "7bd12ef6867cc4c46c8805379c9542420c86a8fff121aca4521ff90443c8e4d0",
+  "final_candidate": false,
+  "architectures": {
+    "arm64": {
+      "archive": {
+        "sha256": "c741e1eeb8f76b0513a82e3cf55fe58c42bc010926197d31dec9c09342cb902d",
+        "bytes": 558418855
+      },
+      "checks": {
+        "build_offline_installation_registration_and_native_integration": "PASS",
+        "unit_tests": "65 passed",
+        "native_comparison": "MATCH: 25 cases, full schemas and delivered documentation",
+        "configuration_matrix": "MATCH: 12 modes",
+        "native_pipe": "MATCH: 3 configurations; actual connect timeout expiration not covered",
+        "installed_iab_provider_including_oauth_missing_state": "PASS",
+        "original_auth_behavior": "PASS",
+        "full_gate": "FAIL: auth fixture cleanup raced Electron profile writer (Directory not empty)",
+        "remaining_iab_xfce_delivery_lifecycle": "NOT RUN in this gate",
+        "production_sandbox_and_chrome": "NOT RUN for these archives"
+      },
+      "evidence": {
+        "differential.log": "79ce3fd16793610a5b242a3067a0abb90977b11c8ff07a41b8f0e61490c960f4",
+        "offline.log": "ef9e353e893d521b301fa7c1ab78e438ee39c1dd6d1f184292133a9c2020837f",
+        "build.log": "19422f11c62ff4e781dce88948b54a604178566c887a4b6a96e71f6551742421",
+        "differential/iab/auth.json": "99f30718dfdcbf4661c0ded406348bb618bf228e1498b071747fe00773a39b39",
+        "differential/iab/provider.json": "518bda2426301fac5e64654303e009322f03057e4b80db62ea31b6ceb29057ed",
+        "differential/native-pipe.json": "de4f8bf3481fd92fa454887e8cc7fa21beb1f14f603e02a8f23f0c82e8f74d8c"
+      },
+      "supplemental_iab_gate": {
+        "result": "PASS",
+        "harness_change": "Bounded cleanup only, 4 shell files; production archive unchanged",
+        "harness_manifest_sha256": "e7db7969eb1c920e7424d30fa09ab3fe85e2bea1ec83c97dde59bcd71176580a",
+        "log_sha256": "039926a3baf8eed466ded4b611841dfe3548feac041fda7e1ad09663103e942e",
+        "coverage": [
+          "original provider and OAuth negative cases",
+          "original auth and account contexts",
+          "streamed HTTP and cancellation",
+          "original deep-link queue",
+          "persisted settings",
+          "native pointer permission Allow/Block plus early-click guard",
+          "annotation independent saved comment",
+          "six native browser commands",
+          "seven original provider configurations",
+          "real MCP navigation matched original fail-closed permission-service boundary with no HTTP request"
+        ],
+        "authenticated_browser_task_success": false
+      }
+    },
+    "x64": {
+      "archive": {
+        "sha256": "35f5794e975d8f5d1470128239552f22de48d00e6e9089ce8ff0b0d8f5555775",
+        "bytes": 566986925
+      },
+      "checks": {
+        "build_offline_installation_registration_and_native_integration": "PASS",
+        "unit_tests": "65 passed",
+        "native_comparison": "MATCH: 25 cases, full schemas and delivered documentation",
+        "configuration_matrix": "MATCH: 12 modes",
+        "native_pipe": "MATCH: 3 configurations; actual connect timeout expiration not covered",
+        "installed_iab_provider_including_oauth_missing_state": "PASS",
+        "original_auth_behavior": "PASS",
+        "full_gate": "FAIL: auth fixture cleanup raced Electron profile writer (Directory not empty)",
+        "remaining_iab_xfce_delivery_lifecycle": "NOT RUN in this gate",
+        "production_sandbox_and_chrome": "NOT RUN for these archives"
+      },
+      "evidence": {
+        "differential.log": "961861942710188b3fa22db6b0cfa11611b0979545c0cb51555b76863a958c1c",
+        "offline.log": "0c151a01716ff279e1a85cfecff8f90ed07f8f4e877bad67b19f67d4489a4eb9",
+        "build.log": "b147752cc962d263043351b571e158ff1928bc8adad17616e5a86e1d9c279d74",
+        "differential/iab/auth.json": "99f30718dfdcbf4661c0ded406348bb618bf228e1498b071747fe00773a39b39",
+        "differential/iab/provider.json": "518bda2426301fac5e64654303e009322f03057e4b80db62ea31b6ceb29057ed",
+        "differential/native-pipe.json": "4de6c0fc20b9b0fd28efb532d8e69dc22568986c26c9b8d1aa907073de19e65f"
+      }
+    }
+  },
+  "local_evidence_directory": "/private/tmp/lcu-parity-final-4djwlqe0"
+}

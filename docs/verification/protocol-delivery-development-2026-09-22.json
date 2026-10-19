@@ -1,0 +1,31 @@
+{
+  "status": "development overlay evidence; final archives pending",
+  "runtime_package": "26.915.31945",
+  "base_archives": {
+    "arm64": "c741e1eeb8f76b0513a82e3cf55fe58c42bc010926197d31dec9c09342cb902d",
+    "x64": "35f5794e975d8f5d1470128239552f22de48d00e6e9089ce8ff0b0d8f5555775"
+  },
+  "overlaid_sources": {
+    "lcu/protocol.py": "3a83013e3764a652e9fcb3d170f4af2e7538e9e22b271695de6452b5b074b908",
+    "lcu/host_bridge.py": "bea2248c8e3e0f93ef513238a1b0235a638d0f61c8f75df2650e2eebb7c828fb",
+    "lcu/browser.py": "96a470e76660cc665917dd18cb147f5c954ab0d8904e6dc075e570179fc8cd9c"
+  },
+  "fixture_sha256": "203027d75f2fc5d0077d4f6e8b600f182d5884957cc12c98d484e58a4543eb71",
+  "checks": {
+    "both_architectures": "PASS: explicit association, GIO OS invocation, subsequent invocation, original queue acceptance, two-owner isolation, invalid-route rejection, owner shutdown cleanup, missing owner",
+    "socket_regressions": "PASS: 3 tests, including occupied/replaced path and idle/cap behavior",
+    "authenticated_oauth_completion": "NOT EXERCISED"
+  },
+  "limitations": [
+    "Desktop association explicitly selects one real owner; no automatic owner inference.",
+    "Pre-existing socket paths fail closed; user inspection/removal is required for stale paths.",
+    "Tests use private offline container homes; x86-64 is emulated on Apple Silicon."
+  ],
+  "evidence": {
+    "run.sh": "1241f88bd6fcfd6009a28be82b3c15539321ee3710e0e04c0f183a1e2bde6a3b",
+    "arm64.log": "e18df033ef81b8e86a310f80c8c29bae81c9d1f7206b7930d51d9028a8eae194",
+    "x64.log": "f9aecc5cf1aa172d7b944dc5b289f413faa74053f060a2bc6f2abb3198a331ea",
+    "socket-unit.log": "b46144e6e30bf54b953fd5b01d044ae231c106f7442ca8ef3937ee4196ec06b8"
+  },
+  "local_evidence_directory": "/private/tmp/lcu-protocol-evidence.rpKNqR"
+}

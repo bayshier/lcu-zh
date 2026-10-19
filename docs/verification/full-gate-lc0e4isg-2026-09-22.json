@@ -1,0 +1,95 @@
+{
+  "status": "incomplete gate; preserved OAuth integration failure",
+  "runtime_package": "26.915.31945",
+  "source_manifest_sha256": "035cb191a632c8ec7f8adc7f7a983af456edaf28de11eedab1fbc89b03dd6fa6",
+  "final_candidate": false,
+  "architectures": {
+    "arm64": {
+      "archive": {
+        "sha256": "23b7a1501739fd02f98d081b03248c6c53a9b46af07f768c803d249cc0979501",
+        "bytes": 558384128
+      },
+      "checks": {
+        "full_application_build": "PASS",
+        "offline_installation_native_desktop_and_agent_registration": "PASS",
+        "installed_archive_production_sandbox_startup_and_discovery": "PASS",
+        "chrome_extension_discovery_and_metadata": "PASS",
+        "chrome_original_auth_boundary": "MATCH; authenticated actions blocked",
+        "native_pipe": "MATCH: three configurations; positive timeout expiration not covered",
+        "native_independent_outcomes": "MATCH: 25 outcomes",
+        "surface_configuration_matrix": "MATCH: 12 modes",
+        "differential_gate": "FAIL: first IAB provider fixture, OAuth missing-state registration returned processed:false instead of processed:true registered:false",
+        "remaining_iab_stages_xfce_delivery_lifecycle": "NOT RUN after failure"
+      },
+      "logs": {
+        "build.log": "091413530d818cf9840e8864fcee9e9274bea10ee5233ac55b897ac407c6bcad",
+        "chrome.log": "8d8d1078145dc234995e9f9435f6e8e45490998a167ed1b83f69960630196226",
+        "differential.log": "07b04d0d42951b3011769e8cbf06f9e95f5ea80bb24c2a68d58bd9baea9ad825",
+        "machine-install.log": "fc55db155818adcb44dc0a81a40feceb25f92a911f4194823e19cbc0977cde32",
+        "offline.log": "30bf7f48759ae1b8ac6089ab649d62784a061e9f563cf831e19db0363007bf75",
+        "production-sandbox.log": "27bb401d4a7da3580ec4ede2eba13723c6c124027bc71340533e9358c58525c2"
+      },
+      "supplemental_checks": {
+        "xfce_desktop_session": "PASS",
+        "actual_agent_instruction_delivery_and_policy": "PASS",
+        "upstream_lifecycle_six_cases": "PASS",
+        "installed_lifecycle_six_cases": "PASS",
+        "execution": "Independent continuation of later stages; initial full gate remains failed."
+      },
+      "supplemental_evidence": {
+        "host-subset.log": "e0796c8c844e7e1bbf61be92f78292cb84af2afd651b70f821a6e2893b00f499",
+        "host-subset/host/summary.json": "ae789b5b5912964c8858bb11d58e27ba85e9d44b4ce0ed75a8b32ce848a24874",
+        "host-subset/lifecycle-upstream/summary.json": "ceb5c591003832d08b11f79447bc8ffc5ae6d830badca32b257998ecd5f7ef09",
+        "host-subset/lifecycle-lcu/summary.json": "103cdaea05d4fcab43e96412ebb81c151e0726c1a103a43fd56ed7c3c256d2b1"
+      },
+      "supplemental_browser_checks": {
+        "annotation": "PASS",
+        "native_commands": "PASS",
+        "provider_configuration_matrix": "MATCH: seven modes",
+        "mcp_navigation": "MATCH: unavailable auto-review permission service failed closed; neither side reached HTTP server",
+        "limits": "Not successful or authenticated navigation; test oracle corrected to require exact observed denial-boundary message."
+      },
+      "supplemental_browser_directory": "/private/tmp/lcu-iab-remaining-20260922-02"
+    },
+    "x64": {
+      "archive": {
+        "sha256": "99f8ff8682d531ec570e29332e3f6a213cecdcb7b51be46948c8438bdad512e4",
+        "bytes": 566947238
+      },
+      "checks": {
+        "full_application_build": "PASS",
+        "offline_installation_native_desktop_and_agent_registration": "PASS",
+        "installed_archive_production_sandbox_startup_and_discovery": "PASS",
+        "chrome_extension_discovery_and_metadata": "PASS",
+        "chrome_original_auth_boundary": "MATCH; authenticated actions blocked",
+        "differential_gate": "NOT RUN"
+      },
+      "logs": {
+        "build.log": "44a88df8c26c92e1e043b47ed8fbdfcf9e80ae1c6fcc03a4a4b86caa609e0353",
+        "chrome.log": "a8f378969cd1085bee2362c0bbf888fb27b523a5316b52fc18efd7d72f394ec8",
+        "machine-install.log": "fc55db155818adcb44dc0a81a40feceb25f92a911f4194823e19cbc0977cde32",
+        "offline.log": "4819dccb7d8473c5ba03d0d9ecb9a6f635c53149e80ec69755a1a9c94c8956e1",
+        "production-sandbox.log": "83b7b0bafdb99113144859886f0ced7159477af9d1d4a7cafb6d76ef9a1fe13f"
+      },
+      "supplemental_checks": {
+        "xfce_desktop_session": "PASS",
+        "actual_agent_instruction_delivery_and_policy": "PASS",
+        "upstream_lifecycle_six_cases": "PASS",
+        "installed_lifecycle_six_cases": "PASS",
+        "execution": "Independent continuation of later stages; initial full gate remains failed."
+      },
+      "supplemental_evidence": {
+        "host-subset.log": "2a87cae0633192f562cd67f88a31e83c5a4138eaf966ca301f2645dd6b908d7f",
+        "host-subset/host/summary.json": "ae789b5b5912964c8858bb11d58e27ba85e9d44b4ce0ed75a8b32ce848a24874",
+        "host-subset/lifecycle-upstream/summary.json": "85ed1d690440b149c95ccbb847af802b10ba66ef9041a3dea67e38ccad9b3e1e",
+        "host-subset/lifecycle-lcu/summary.json": "a6989966b668140ac37d1480025376529738b6e57ab1e6ad29aacb327de74fa6"
+      }
+    }
+  },
+  "local_evidence_directory": "/private/tmp/lcu-parity-gate-lc0e4isg",
+  "limitations": [
+    "Authenticated browser actions not exercised; original identity boundary preserved.",
+    "Production-sandbox probes cover unprivileged renderer startup and original provider discovery only.",
+    "No universal reliability claim."
+  ]
+}

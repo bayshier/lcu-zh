@@ -1,0 +1,162 @@
+{
+  "upstreamPackage": "26.915.31945",
+  "scope": "Static provenance only; source presence is not integration or behavior parity.",
+  "sources": [
+    {
+      "archivePath": ".vite/build/main-DUHZj4_w.js",
+      "sourceSha256": "9e8a3bd79c817064f28693ca26aa1378895e07ab2108c78c42d0ea20dac9d66e",
+      "declarations": [
+        {
+          "name": "_U",
+          "startByte": 2070657,
+          "endByte": 2070948,
+          "sha256": "07c5d969a76c7cc946e07e6bfd110a441db543b482c688dc587066e20d876ec1"
+        },
+        {
+          "name": "vU",
+          "startByte": 2070948,
+          "endByte": 2071060,
+          "sha256": "e00186ef4063244c7c7a00dee89963233096a9578e837437216b92d1cc522364"
+        },
+        {
+          "name": "yU",
+          "startByte": 2071060,
+          "endByte": 2071199,
+          "sha256": "568a4255d5240f8f63aa44206927cf37617131d435155bcbe3b092d03a739172"
+        },
+        {
+          "name": "DGe",
+          "startByte": 2256946,
+          "endByte": 2258235,
+          "sha256": "a88d2bb54d05e777534ec6649f9aa1bce7fa76845368808ba81bf4a3e9bc50dc"
+        },
+        {
+          "name": "Lrt",
+          "startByte": 3508803,
+          "endByte": 3512578,
+          "sha256": "f40e77c062650a912913cc3b878c8384c28f5d2f2fc6637e70df4a4666e6272d"
+        },
+        {
+          "name": "Grt",
+          "startByte": 3515260,
+          "endByte": 3517673,
+          "sha256": "79bb1092bb5ef3f2a41f55f3bc6f17409fc38ce26b29bc4318d7586b5cf89cca"
+        }
+      ]
+    },
+    {
+      "archivePath": ".vite/build/bootstrap-DF0QwAxC.js",
+      "sourceSha256": "5787d416ccbd7be549251d2c691f9c2579d6960f3ccd470037d97486c93fdf0f",
+      "declarations": [
+        {
+          "name": "vD",
+          "startByte": 550593,
+          "endByte": 553521,
+          "sha256": "d621ae744e0051d5e5523221e01d1708477509e64881629ee6576ab4ef9bc37d"
+        },
+        {
+          "name": "OD",
+          "startByte": 555943,
+          "endByte": 555990,
+          "sha256": "64aed49e3dea961c1c321ecf8891c610501824df2dd92cdc6f420b2a97d1073f"
+        },
+        {
+          "name": "UO",
+          "startByte": 569531,
+          "endByte": 571156,
+          "sha256": "236e8d049ae3453e94f9abdcfe076a0aaad7b7e74cc4a60a9912981ca42b4dfc"
+        },
+        {
+          "name": "dk",
+          "startByte": 577101,
+          "endByte": 579260,
+          "sha256": "0ea3cfa9253cdd56bbf222bd91fe68ab3a588b80bb7a6fa9ac62a1ccee351d54"
+        }
+      ]
+    },
+    {
+      "archivePath": "webview/assets/app-initial-430deae5a13a.js",
+      "sourceSha256": "882fff7cf1759f29e02d25aa896eb45ad9cb731d4a1257a474ea3aeebeef758f",
+      "declarations": [
+        {
+          "name": "pul",
+          "startByte": 11649813,
+          "endByte": 11655711,
+          "sha256": "ee1192b907107008cfb439003093a2372bc3785e45cb713030692475ae777da3"
+        },
+        {
+          "name": "bul",
+          "startByte": 11656638,
+          "endByte": 11666520,
+          "sha256": "d30ef61f4564e10209375ccbf7c64b6ec5a4e7b1404a850812d066a3c0128702"
+        },
+        {
+          "name": "Aul",
+          "startByte": 11668198,
+          "endByte": 11668495,
+          "sha256": "de55d0d7cd21661cab6e416e35e54c740bafae98ea85fd2daa788d43ff1f8099"
+        },
+        {
+          "name": "jul",
+          "startByte": 11668495,
+          "endByte": 11669516,
+          "sha256": "acca2264cf192271038dc630692f2e46fa29eff03d12cbcf824c04bd8354012a"
+        }
+      ]
+    },
+    {
+      "archivePath": "webview/assets/tab-content-b70d652be669.js",
+      "sourceSha256": "b316ade805850138537db825b79122407cc15331146894c12c935d1643a19076",
+      "declarations": [
+        {
+          "name": "Wc",
+          "startByte": 26890,
+          "endByte": 44488,
+          "sha256": "2fea563b36c167b029fb3f5686cb042ef6595ea541fa2c5f7970104b9037fee7"
+        },
+        {
+          "name": "ku",
+          "startByte": 78727,
+          "endByte": 79003,
+          "sha256": "e5c6972bd200ddf2aad65a85c8b3fab73060e805e1811d4e4548a0a39f882000"
+        },
+        {
+          "name": "Au",
+          "startByte": 79003,
+          "endByte": 79180,
+          "sha256": "e54704ac0fcd8f9eb0ff1ba557b244c4922fd1a77d84c3f32ce21455149ef2fb"
+        },
+        {
+          "name": "lm",
+          "startByte": 210232,
+          "endByte": 266023,
+          "sha256": "b7ce235bf5e791915602c00acf1264fed9e7c920136629af3f872cb7847a6a3e"
+        },
+        {
+          "name": "Hm",
+          "startByte": 269342,
+          "endByte": 270852,
+          "sha256": "3a9f038c3a480eafa8cac911af4d73a8b7e45f0982cf9b1575c13120debd9378"
+        }
+      ]
+    },
+    {
+      "archivePath": "webview/assets/button-3b7641138a7c.js",
+      "sourceSha256": "6c9163355f7e5c5c03ea7e7e93ed013648236ef505fd59cdbf9538af68b63eb0",
+      "declarations": [
+        {
+          "name": "sn",
+          "startByte": 27170,
+          "endByte": 33958,
+          "sha256": "291985e2f8d7131ca91c735e34a1d9b029d2e5791c28e11836274c40d2380656"
+        },
+        {
+          "name": "yn",
+          "startByte": 34799,
+          "endByte": 38198,
+          "sha256": "062b328544d8e17bb21e9b08d797ce5ff51baab915d485f54206a85c7e69d5d6"
+        }
+      ]
+    }
+  ]
+}

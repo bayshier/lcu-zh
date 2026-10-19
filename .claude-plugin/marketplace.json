@@ -1,0 +1,16 @@
+{
+  "name": "lcu",
+  "owner": {
+    "name": "LCU"
+  },
+  "metadata": {
+    "description": "LCU for Claude Code: Codex computer use through the locally installed ChatGPT desktop app."
+  },
+  "plugins": [
+    {
+      "name": "lcu",
+      "source": "./adapters/claude-plugin",
+      "description": "Codex computer use in Claude Code. Installs LCU from its latest release when it is missing, then registers it with `lcu setup --agent claude-code`."
+    }
+  ]
+}

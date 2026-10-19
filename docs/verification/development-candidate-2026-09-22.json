@@ -1,0 +1,454 @@
+{
+  "status": "development evidence only; predates full IAB packaging and latest adapters",
+  "upstream_package_version": "26.915.31945",
+  "candidate_archives": {
+    "arm64": {
+      "sha256": "ab3b0b6b465989246eb7a6707d61406a6bf9d4828fcc5c44e8f55f121bde2094",
+      "contains_final_host_changes": false
+    },
+    "x64": {
+      "sha256": "c9427f6d79a387e552ac89645c5349c5553dfae83ac9d727676ffd4e228f0008",
+      "contains_final_host_changes": false
+    }
+  },
+  "native": {
+    "arm64": {
+      "upstream": {
+        "result_sha256": "a58f983c33fea4f6f64645499aa24c30c08ad7a9f5ea6a7d4f81aaed071b86a1",
+        "outcomes": {
+          "methods": [
+            "activate_window",
+            "click",
+            "drag",
+            "drag_handle",
+            "get_screenshot",
+            "get_window_state",
+            "launch_app",
+            "list_apps",
+            "list_windows",
+            "move",
+            "move_relative",
+            "perform_secondary_action",
+            "press_key",
+            "scroll",
+            "target",
+            "type_text"
+          ],
+          "typed_unicode": "Caf\u00e9 \u65e5\u672c\u8a9e \ud83d\udc27",
+          "bound_input_focus_pointer_isolation": "passed",
+          "paste_secondary_action": "Pasted \u0394 second pass",
+          "clipboard_after_paste": "",
+          "scroll_pixels": 217.04378766247657,
+          "bound_drag": [
+            {
+              "type": 4,
+              "x": 100,
+              "y": 100,
+              "state": 0
+            },
+            {
+              "type": 7,
+              "x": 300,
+              "y": 100,
+              "state": 256
+            }
+          ],
+          "desktop_drag_handle": [
+            {
+              "type": 4,
+              "x": 100,
+              "y": 100,
+              "state": 0
+            },
+            {
+              "type": 7,
+              "x": 300,
+              "y": 100,
+              "state": 256
+            }
+          ],
+          "query": "{\n  source: 'at_spi',\n  tree: '0 frame Differential Target\\n' +\n    '\\t5 scroll pane\\n' +\n    '\\t\\t6 viewport\\n' +\n    '\\t\\t\\t8 push button Row 0',\n  screenshots: 0\n}",
+          "window_screenshot": "valid-jpeg",
+          "combined_window_state_screenshot": "valid-jpeg",
+          "desktop_screenshot": "valid-jpeg",
+          "fallback_click": "40,40",
+          "dialog_lifecycle_stale_window": "passed",
+          "application_launch": "passed",
+          "failed_actions_preserve_files": "passed",
+          "two_client_observation_and_input_scoping": "concurrent observations; sequential input; independent files",
+          "reset_timeout_recovery": "passed",
+          "optional_audio": "stereo-24000Hz-nonzero-wave; duplicate-start and idle-stop rejected"
+        }
+      },
+      "lcu": {
+        "result_sha256": "a58f983c33fea4f6f64645499aa24c30c08ad7a9f5ea6a7d4f81aaed071b86a1",
+        "outcomes": {
+          "methods": [
+            "activate_window",
+            "click",
+            "drag",
+            "drag_handle",
+            "get_screenshot",
+            "get_window_state",
+            "launch_app",
+            "list_apps",
+            "list_windows",
+            "move",
+            "move_relative",
+            "perform_secondary_action",
+            "press_key",
+            "scroll",
+            "target",
+            "type_text"
+          ],
+          "typed_unicode": "Caf\u00e9 \u65e5\u672c\u8a9e \ud83d\udc27",
+          "bound_input_focus_pointer_isolation": "passed",
+          "paste_secondary_action": "Pasted \u0394 second pass",
+          "clipboard_after_paste": "",
+          "scroll_pixels": 217.04378766247657,
+          "bound_drag": [
+            {
+              "type": 4,
+              "x": 100,
+              "y": 100,
+              "state": 0
+            },
+            {
+              "type": 7,
+              "x": 300,
+              "y": 100,
+              "state": 256
+            }
+          ],
+          "desktop_drag_handle": [
+            {
+              "type": 4,
+              "x": 100,
+              "y": 100,
+              "state": 0
+            },
+            {
+              "type": 7,
+              "x": 300,
+              "y": 100,
+              "state": 256
+            }
+          ],
+          "query": "{\n  source: 'at_spi',\n  tree: '0 frame Differential Target\\n' +\n    '\\t5 scroll pane\\n' +\n    '\\t\\t6 viewport\\n' +\n    '\\t\\t\\t8 push button Row 0',\n  screenshots: 0\n}",
+          "window_screenshot": "valid-jpeg",
+          "combined_window_state_screenshot": "valid-jpeg",
+          "desktop_screenshot": "valid-jpeg",
+          "fallback_click": "40,40",
+          "dialog_lifecycle_stale_window": "passed",
+          "application_launch": "passed",
+          "failed_actions_preserve_files": "passed",
+          "two_client_observation_and_input_scoping": "concurrent observations; sequential input; independent files",
+          "reset_timeout_recovery": "passed",
+          "optional_audio": "stereo-24000Hz-nonzero-wave; duplicate-start and idle-stop rejected"
+        }
+      }
+    },
+    "x64": {
+      "upstream": {
+        "result_sha256": "a58f983c33fea4f6f64645499aa24c30c08ad7a9f5ea6a7d4f81aaed071b86a1",
+        "outcomes": {
+          "methods": [
+            "activate_window",
+            "click",
+            "drag",
+            "drag_handle",
+            "get_screenshot",
+            "get_window_state",
+            "launch_app",
+            "list_apps",
+            "list_windows",
+            "move",
+            "move_relative",
+            "perform_secondary_action",
+            "press_key",
+            "scroll",
+            "target",
+            "type_text"
+          ],
+          "typed_unicode": "Caf\u00e9 \u65e5\u672c\u8a9e \ud83d\udc27",
+          "bound_input_focus_pointer_isolation": "passed",
+          "paste_secondary_action": "Pasted \u0394 second pass",
+          "clipboard_after_paste": "",
+          "scroll_pixels": 217.04378766247657,
+          "bound_drag": [
+            {
+              "type": 4,
+              "x": 100,
+              "y": 100,
+              "state": 0
+            },
+            {
+              "type": 7,
+              "x": 300,
+              "y": 100,
+              "state": 256
+            }
+          ],
+          "desktop_drag_handle": [
+            {
+              "type": 4,
+              "x": 100,
+              "y": 100,
+              "state": 0
+            },
+            {
+              "type": 7,
+              "x": 300,
+              "y": 100,
+              "state": 256
+            }
+          ],
+          "query": "{\n  source: 'at_spi',\n  tree: '0 frame Differential Target\\n' +\n    '\\t5 scroll pane\\n' +\n    '\\t\\t6 viewport\\n' +\n    '\\t\\t\\t8 push button Row 0',\n  screenshots: 0\n}",
+          "window_screenshot": "valid-jpeg",
+          "combined_window_state_screenshot": "valid-jpeg",
+          "desktop_screenshot": "valid-jpeg",
+          "fallback_click": "40,40",
+          "dialog_lifecycle_stale_window": "passed",
+          "application_launch": "passed",
+          "failed_actions_preserve_files": "passed",
+          "two_client_observation_and_input_scoping": "concurrent observations; sequential input; independent files",
+          "reset_timeout_recovery": "passed",
+          "optional_audio": "stereo-24000Hz-nonzero-wave; duplicate-start and idle-stop rejected"
+        }
+      },
+      "lcu": {
+        "result_sha256": "a58f983c33fea4f6f64645499aa24c30c08ad7a9f5ea6a7d4f81aaed071b86a1",
+        "outcomes": {
+          "methods": [
+            "activate_window",
+            "click",
+            "drag",
+            "drag_handle",
+            "get_screenshot",
+            "get_window_state",
+            "launch_app",
+            "list_apps",
+            "list_windows",
+            "move",
+            "move_relative",
+            "perform_secondary_action",
+            "press_key",
+            "scroll",
+            "target",
+            "type_text"
+          ],
+          "typed_unicode": "Caf\u00e9 \u65e5\u672c\u8a9e \ud83d\udc27",
+          "bound_input_focus_pointer_isolation": "passed",
+          "paste_secondary_action": "Pasted \u0394 second pass",
+          "clipboard_after_paste": "",
+          "scroll_pixels": 217.04378766247657,
+          "bound_drag": [
+            {
+              "type": 4,
+              "x": 100,
+              "y": 100,
+              "state": 0
+            },
+            {
+              "type": 7,
+              "x": 300,
+              "y": 100,
+              "state": 256
+            }
+          ],
+          "desktop_drag_handle": [
+            {
+              "type": 4,
+              "x": 100,
+              "y": 100,
+              "state": 0
+            },
+            {
+              "type": 7,
+              "x": 300,
+              "y": 100,
+              "state": 256
+            }
+          ],
+          "query": "{\n  source: 'at_spi',\n  tree: '0 frame Differential Target\\n' +\n    '\\t5 scroll pane\\n' +\n    '\\t\\t6 viewport\\n' +\n    '\\t\\t\\t8 push button Row 0',\n  screenshots: 0\n}",
+          "window_screenshot": "valid-jpeg",
+          "combined_window_state_screenshot": "valid-jpeg",
+          "desktop_screenshot": "valid-jpeg",
+          "fallback_click": "40,40",
+          "dialog_lifecycle_stale_window": "passed",
+          "application_launch": "passed",
+          "failed_actions_preserve_files": "passed",
+          "two_client_observation_and_input_scoping": "concurrent observations; sequential input; independent files",
+          "reset_timeout_recovery": "passed",
+          "optional_audio": "stereo-24000Hz-nonzero-wave; duplicate-start and idle-stop rejected"
+        }
+      }
+    }
+  },
+  "mode_matrices": {
+    "arm64": {
+      "upstream": {
+        "result_sha256": "650ebf8af05279b20407b7a8674001243ef8472bb1fdf3adae0c5340cb6b3a8d",
+        "modes": [
+          "computer:codex-app",
+          "computer:training",
+          "computer:cloud",
+          "computer:orbit",
+          "browser:codex-app",
+          "browser:training",
+          "browser:cloud",
+          "browser:orbit",
+          "browser,computer:codex-app",
+          "browser,computer:training",
+          "browser,computer:cloud",
+          "browser,computer:orbit"
+        ],
+        "scope": "schema and instruction delivery; not authenticated browser-task success"
+      },
+      "lcu": {
+        "result_sha256": "6a2cb5dea1efcc956a94ebc5dbb67b9fc206d4e8313877f31723c585ee2fdc64",
+        "modes": [
+          "computer:codex-app",
+          "computer:training",
+          "computer:cloud",
+          "computer:orbit",
+          "browser:codex-app",
+          "browser:training",
+          "browser:cloud",
+          "browser:orbit",
+          "browser,computer:codex-app",
+          "browser,computer:training",
+          "browser,computer:cloud",
+          "browser,computer:orbit"
+        ],
+        "scope": "schema and instruction delivery; not authenticated browser-task success"
+      }
+    },
+    "x64": {
+      "upstream": {
+        "result_sha256": "fb26bd7129c5a8fb0596fbef8660c05a980f37945ddf87146b3307de2298ac9b",
+        "modes": [
+          "computer:codex-app",
+          "computer:training",
+          "computer:cloud",
+          "computer:orbit",
+          "browser:codex-app",
+          "browser:training",
+          "browser:cloud",
+          "browser:orbit",
+          "browser,computer:codex-app",
+          "browser,computer:training",
+          "browser,computer:cloud",
+          "browser,computer:orbit"
+        ],
+        "scope": "schema and instruction delivery; not authenticated browser-task success"
+      },
+      "lcu": {
+        "result_sha256": "173ee020796372e9e7ffe2260b9a122f9753d4aef8d47cb753c6c413e999caec",
+        "modes": [
+          "computer:codex-app",
+          "computer:training",
+          "computer:cloud",
+          "computer:orbit",
+          "browser:codex-app",
+          "browser:training",
+          "browser:cloud",
+          "browser:orbit",
+          "browser,computer:codex-app",
+          "browser,computer:training",
+          "browser,computer:cloud",
+          "browser,computer:orbit"
+        ],
+        "scope": "schema and instruction delivery; not authenticated browser-task success"
+      }
+    }
+  },
+  "model_delivery": {
+    "arm64": {
+      "upstream-25000": {
+        "tool_names": [
+          "js",
+          "js_reset"
+        ],
+        "delivered_chars": 20827,
+        "budget": 25000,
+        "complete_guides": true,
+        "truncated": false
+      },
+      "lcu-25000": {
+        "tool_names": [
+          "js",
+          "js_reset"
+        ],
+        "delivered_chars": 20827,
+        "budget": 25000,
+        "complete_guides": true,
+        "truncated": false
+      },
+      "upstream-100": {
+        "tool_names": [
+          "js",
+          "js_reset"
+        ],
+        "delivered_chars": 523,
+        "budget": 100,
+        "complete_guides": false,
+        "truncated": true
+      },
+      "lcu-100": {
+        "tool_names": [
+          "js",
+          "js_reset"
+        ],
+        "delivered_chars": 523,
+        "budget": 100,
+        "complete_guides": false,
+        "truncated": true
+      },
+      "result_sha256": "d2ee1749ddf55adca360261fbdbd8c4bcd026b5040a7b4b41d2af6ee218c9a57"
+    },
+    "x64": {
+      "upstream-25000": {
+        "tool_names": [
+          "js",
+          "js_reset"
+        ],
+        "delivered_chars": 20827,
+        "budget": 25000,
+        "complete_guides": true,
+        "truncated": false
+      },
+      "lcu-25000": {
+        "tool_names": [
+          "js",
+          "js_reset"
+        ],
+        "delivered_chars": 20827,
+        "budget": 25000,
+        "complete_guides": true,
+        "truncated": false
+      },
+      "upstream-100": {
+        "tool_names": [
+          "js",
+          "js_reset"
+        ],
+        "delivered_chars": 523,
+        "budget": 100,
+        "complete_guides": false,
+        "truncated": true
+      },
+      "lcu-100": {
+        "tool_names": [
+          "js",
+          "js_reset"
+        ],
+        "delivered_chars": 523,
+        "budget": 100,
+        "complete_guides": false,
+        "truncated": true
+      },
+      "result_sha256": "d2ee1749ddf55adca360261fbdbd8c4bcd026b5040a7b4b41d2af6ee218c9a57"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+#!/usr/bin/expect -f
+# usage: claude_approval_mod.exp OUT_LOG COLUMNS CLAUDE_BIN PROJECT PROMPT PATTERN KEYS MCP_CONFIG [claude args...]
+# Drives an interactive Claude Code: answers startup prompts, sends PROMPT, waits for PATTERN
+# (the approval dialog), sends KEYS (tokens: ENTER DOWN UP ESC or text), then waits for the tool to finish.
+set out [lindex $argv 0]
+set columns [lindex $argv 1]
+set bin [lindex $argv 2]
+set project [lindex $argv 3]
+set prompt [lindex $argv 4]
+set pattern [lindex $argv 5]
+set keys [lindex $argv 6]
+set mcp [lindex $argv 7]
+set extra [lrange $argv 8 end]
+set timeout 40
+set delay 3
+if {[info exists env(LCU_E2E_DELAY)]} { set delay $env(LCU_E2E_DELAY) }
+log_file -noappend $out
+cd $project
+set env(TERM) xterm-256color
+eval spawn [list $bin] --mcp-config $mcp --strict-mcp-config --permission-mode default $extra
+stty rows 50 columns $columns < $spawn_out(slave,name)
+set seen 0
+set started 0
+while {1} {
+  expect {
+    -re {Quick} { sleep 1; send "\r"; exp_continue }
+    -re {API.?key|Do.?you.?want.?to.?use} { sleep 1; send "\033\[A"; sleep 1; send "\r"; exp_continue }
+    -re {fullscreen.?renderer|Flicker} { sleep 1; send "\033\[B"; sleep 1; send "\r"; exp_continue }
+    -re {Enable.?hot.?reload} { puts "\nHOT-RELOAD-QUESTION"; sleep 1; send "\r"; exp_continue }
+    -re {New.?MCP.?server} { sleep 1; send "\r"; exp_continue }
+    -re {shortcuts|bypass|\? for} {
+      if {!$started} { set started 1; sleep 3; send -- "$prompt"; sleep 1; send "\r" }
+      exp_continue
+    }
+    -re $pattern {
+      if {!$seen} {
+        set seen 1
+        puts "\nDIALOG-SEEN"
+        sleep $delay
+        foreach k $keys {
+          switch -- $k { ENTER { send "\r" } DOWN { send "\033\[B" } UP { send "\033\[A" } ESC { send "\033" } default { send -- $k } }
+          sleep 1
+        }
+      }
+      exp_continue
+    }
+    -re {finished\.} { puts "\nTOOL-FINISHED"; break }
+    timeout { puts "\nTIMEOUT seen=$seen started=$started"; break }
+    eof { puts "\nEOF"; break }
+  }
+}
+sleep 2
+send "\003"
+sleep 1
+send "\003"
+expect eof

@@ -1,0 +1,16 @@
+Usage: scripts/install.sh [--prefix PREFIX] [--runtime-only | --agent AGENT ... | --export PATH] [options]
+
+Install LCU beside the locally installed ChatGPT app. Linux needs X11 and D-Bus; apt provisioning needs root.
+
+  --prefix PREFIX       installation prefix (Linux: /opt/lcu; macOS: ~/.local/share/lcu)
+  --existing-app PATH   the installed app (Linux: /usr/lib/chatgpt; macOS: /Applications/ChatGPT.app)
+  --runtime-only        install without registering an agent
+  --agent AGENT         agent to register; repeat, or use all or auto (--list-agents lists them)
+  --user USER           target account (its user-database home); root must select one.
+                        Default: this account, in $HOME when it is an owned directory without links
+  --yes                 apply explicit choices without a confirmation prompt
+  --skip-system         Linux: skip apt; system libraries must already exist
+  --offline             never use the network; requires --skip-system
+  --scope, --project, --export, --chrome, --no-chrome, --audio, --no-audio, --approval, --session,
+  --allow-missing, --check-desktop, --cross-turn, --unattended
+                        passed to `lcu setup`; see `lcu setup --help`

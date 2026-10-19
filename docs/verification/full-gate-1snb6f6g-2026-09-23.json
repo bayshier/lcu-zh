@@ -1,0 +1,159 @@
+{
+  "status": "Both immutable architecture gates passed their bounded local checks; full parity and release readiness remain unestablished.",
+  "runtime_package": "26.915.31945",
+  "final_candidate": false,
+  "candidate_directory": "/private/tmp/lcu-parity-verified-1snb6f6g",
+  "source_manifest_sha256": "94d852e3358223718585388e9a44f03dc023f69de21683a37290d7b5c5c10fb4",
+  "candidate_exit_status": {
+    "arm64": {
+      "build": 0,
+      "offline": 0,
+      "differential": 0
+    },
+    "x64": {
+      "build": 0,
+      "offline": 0,
+      "differential": 0
+    },
+    "status_file": "/private/tmp/lcu-parity-verified-1snb6f6g/exit-status.json"
+  },
+  "architectures": {
+    "arm64": {
+      "environment": "Linux ARM64 on Apple Silicon via OrbStack",
+      "archive": {
+        "path": "arm64/lcu-0.3.0-dev-linux-arm64.tar.gz",
+        "sha256": "4f30ef4c05a7196c5a8def4329f7e8fb7ea548db387be82b980d381c44e67d39",
+        "bytes": 558401192
+      },
+      "exit_status": {
+        "build": 0,
+        "offline": 0,
+        "differential": 0
+      },
+      "checks": {
+        "offline_installation_registration_native_integration": "PASS; archive checksum verified",
+        "offline_unit_tests": "PASS: 70 tests",
+        "differential": "PASS: 25 native comparisons with complete schemas and delivered documentation; 12 configuration modes; installed IAB provider, auth failure/cache, streamed HTTP IPC, deep links, settings, permission UI, browser commands and effective API restrictions",
+        "agent_delivery_and_lifecycle": "PASS: full upstream guide at 25,000 tokens, truncation at 100, denied/success fixture controls, and Stop/Interrupt/SubagentStop lifecycle cases",
+        "xfce": "PASS: session discovery and complete desktop exercise under combined surfaces",
+        "native_pipe": "MATCH: three configurations and independent peer recovery/bytes/delayed response; connect-timeout expiration not covered"
+      },
+      "evidence_sha256": {
+        "build.log": "8b1bb8523006e81c1d63e62d561bee84561adf084ed56b3224cb1e4ebab821a1",
+        "offline.log": "ae54867884e0d42ff93de397b0a270f5c8240645a10207d1a7ce7e444016c81a",
+        "differential.log": "0c14ac03d12f9360474b52bead36373d77e4c07ef55524e5bd9c7db2a022fed4",
+        "build-command.json": "a2290cfb9c72f4a390dcb7a95918205707f19202e79d9e2a1a15638076ab35bc",
+        "offline-command.json": "97f03c8dcba65a70891d26aec7333291550881532ab58710e4fcd791cd0e5e42",
+        "differential-command.json": "9a1b38768851a33b7b85d576f4a9e84cd7a0ff49ba34f8801f1fed6fb4573cf2"
+      }
+    },
+    "x64": {
+      "environment": "Linux x86-64 binaries emulated on Apple Silicon via OrbStack; not native x86-64 hardware",
+      "archive": {
+        "path": "x64/lcu-0.3.0-dev-linux-x64.tar.gz",
+        "sha256": "b52c8a45adbf503e36ed50f9a32156e657ace715afdea569e6d1bec48ffcfcd8",
+        "bytes": 566955074
+      },
+      "exit_status": {
+        "build": 0,
+        "offline": 0,
+        "differential": 0
+      },
+      "checks": {
+        "offline_installation_registration_native_integration": "PASS; archive checksum verified",
+        "offline_unit_tests": "PASS: 70 tests",
+        "differential": "PASS: 25 native comparisons with complete schemas and delivered documentation; 12 configuration modes; installed IAB provider, auth failure/cache, streamed HTTP IPC, deep links, settings, permission UI, browser commands and effective API restrictions",
+        "agent_delivery_and_lifecycle": "PASS: full upstream guide at 25,000 tokens, truncation at 100, denied/success fixture controls, and Stop/Interrupt/SubagentStop lifecycle cases",
+        "xfce": "PASS: session discovery and complete desktop exercise under combined surfaces",
+        "native_pipe": "MATCH: three configurations and independent peer recovery/bytes/delayed response; connect-timeout expiration not covered"
+      },
+      "evidence_sha256": {
+        "build.log": "ed8deb07117f2796c9197174f2370c1b6681063c9f07e7c436176600dfe2b867",
+        "offline.log": "3357863dfe0aa0029bd8b4c391d784ff93277fb9517958f0f8240c4c4480c32a",
+        "differential.log": "36d81077ff325d82e1ca5acbfa7aeea68e915e879f61610052f9eb0ceacf1279",
+        "build-command.json": "cad77fa2c9e68d724d6088c5817f25cee716c5fd040594701beea6ed2fec7dfc",
+        "offline-command.json": "b43920589236e077a5df6ba2256fd6a73ccfcac2c52d9e31e1cce80a67698de0",
+        "differential-command.json": "61ae32246a43142cb6fb0fd4d7f124570f2457766e8095ca045bda23bad792a6"
+      }
+    }
+  },
+  "source_verified": {
+    "payload": "Zero exclusions from the source-verified original application payload (3,760 files and 620 directories under /usr/lib/chatgpt).",
+    "instructions": "All 195 instruction resources and all 385 reference copies remain byte-identical; seven dynamic document graphs are preserved.",
+    "archive_source": "Both archives were built from the source tree captured by source-manifest.json. Later edits to documentation and tests/iab_commands.cjs are outside the frozen archives. Production source and instruction files match the frozen source."
+  },
+  "supplemental_checks": {
+    "chrome_arm64": {
+      "result": "PASS with scoped limitation",
+      "exit": 0,
+      "summary": "Original extension/native-host discovery, caller metadata boundaries, and upstream/LCU default auth boundary match. Browser actions are blocked without Codex authentication; no authenticated task-success claim.",
+      "log_sha256": "70a31995fd7e600de54b82723d1887ceb7d009f48dcd0249e89b159ecd238982",
+      "status_file_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "chrome_x64": {
+      "result": "PASS with scoped limitation",
+      "exit": 0,
+      "summary": "Original extension/native-host discovery, caller metadata boundaries, and upstream/LCU default auth boundary match. Browser actions are blocked without Codex authentication; no authenticated task-success claim.",
+      "log_sha256": "b167929bdf605d9863b27cd1176fe0d5c980046617017cbb0c3d1dc533d9f9e2",
+      "status_file_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "production_sandbox_arm64": {
+      "result": "PASS",
+      "exit": 0,
+      "summary": "Installed archive renderer and original provider start as an unprivileged user with no Electron arguments; no authenticated action claim.",
+      "log_sha256": "6bfb01ca4a258e2465d34a12139c2f9d4a0b2c4be46a009e35cb040453a0373d",
+      "status_file_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "production_sandbox_x64": {
+      "result": "PASS",
+      "exit": 0,
+      "summary": "Installed archive renderer and original provider start as an unprivileged user with no Electron arguments; no authenticated action claim.",
+      "log_sha256": "983ebe2df04756f6de8ee59224ba5cf479028d506310b8b98f9507fcaf198827",
+      "status_file_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "production_sandbox_initial_failure": {
+      "result": "FAIL: both first VM-only probes exited 2 because the container fixture referenced a missing /src/.verification path; corrected VM-only retries passed with the same immutable archive checksums.",
+      "arm64_log_sha256": "3bd090c403e7f953e1e6e76600da5faee826caf5dcede4dd6899c7f6bf153c5f",
+      "x64_log_sha256": "3296bfb3cc794e2916a0bb39e953aaef5cf993b4529093de3aa05905f70af224",
+      "status_file_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3"
+    },
+    "clean_native_browser_commands": {
+      "result": "PASS on both frozen archives",
+      "exit": 0,
+      "test_source_sha256": "4881924118db0e9d76410587455f7f6b6fce43d882f7e9ce420f05f041080988",
+      "arm64_stdout_sha256": "780bb4a3123d450381ed7c0668ede2f23447805ccb4afac3364ee1999f0f3487",
+      "x64_stdout_sha256": "30f9a17b2feac37333ca284b6f75b456bb68d22eaba0fae5eabf65ec43aa0ecc",
+      "summary": "Clean harness retained passive focus observation and strict Ctrl+F/three-match assertions; address, back, next, reload, Find and close passed. Focus events include focusin on content-search-input. Initial x64 harness bootstrap errors are preserved separately and did not reach the fixture. This run does not prove the cause of the earlier intermittent focus loss.",
+      "initial_bootstrap_failure_sha256": "aedd765b47d31354b176b987d37fa8ead75d44071b29c530a17054996dfb16f0",
+      "initial_bootstrap_failure_path": "/private/tmp/lcu-native-focus-clean-evidence/amd64/bootstrap-failures.txt"
+    }
+  },
+  "preserved_failures_and_limits": [
+    "The initial VM probe fixture path failures are preserved, though superseded by successful corrected retries.",
+    "Earlier intermittent x64 Find focus loss remains causally unexplained; this gate and the clean focused harness passed, but do not establish why the earlier loss occurred. A recent fallback/focus-area correction has four pre-archive passes.",
+    "Authenticated browser actions and authenticated external service behavior remain unverified because account credentials/services were unavailable.",
+    "A real managing-host event stream and stable reconnect identity are external inputs and remain unverified.",
+    "The original verification service is Darwin-gated and has no normal Linux caller; no Linux approval response was invented or bypassed.",
+    "Automatic approval review rejected broadening NODE_REPL_TRUSTED_CODE_PATHS to all of CODEX_HOME. The narrower trust roots remain; no bypass was made.",
+    "Concurrent clipboard isolation and actual native socket connect-timeout expiration were not covered.",
+    "These local gates do not establish universal behavioral identity, agent reliability, or release readiness."
+  ],
+  "evidence_locations": {
+    "immutable_candidate": "/private/tmp/lcu-parity-verified-1snb6f6g",
+    "chrome_and_initial_vm_logs": "/private/tmp/lcu-aux-results-lcu-parity-verified-1snb6f6g.MVfdJR",
+    "corrected_vm_logs": "/private/tmp/lcu-aux-results-lcu-parity-verified-1snb6f6g.3MPjIr",
+    "clean_browser_command_logs": "/private/tmp/lcu-native-focus-clean-evidence",
+    "initial_vm_failure": "Both first production-sandbox probes exited 2 because the container fixture pointed at a nonexistent /src/.verification path. The corrected VM-only retries passed on the same frozen archives.",
+    "prior_gate_history": [
+      "full-gate-lc0e4isg-2026-09-22.json",
+      "full-gate-4djwlqe0-2026-09-22.json",
+      "full-gate-hxkg3p_6-2026-09-22.json"
+    ]
+  },
+  "evidence_sha256": {
+    "source-manifest.json": "94d852e3358223718585388e9a44f03dc023f69de21683a37290d7b5c5c10fb4",
+    "arm64_archive": "4f30ef4c05a7196c5a8def4329f7e8fb7ea548db387be82b980d381c44e67d39",
+    "x64_archive": "b52c8a45adbf503e36ed50f9a32156e657ace715afdea569e6d1bec48ffcfcd8",
+    "candidate-exit-status.json": "6223e9753656c22c974bacf0b4777626a29f408e2e1fc688692cff4ffd42a1a0"
+  }
+}

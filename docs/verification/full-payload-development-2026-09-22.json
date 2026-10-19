@@ -1,0 +1,31 @@
+{
+  "status": "development packaging evidence only; predates final panel and account integration",
+  "architecture": "arm64",
+  "runtime_package": "26.915.31945",
+  "archive": {
+    "sha256": "fa5cd2b83860becb80cf5275bc4b3a213194d87d798d013ff008646362ecafaf",
+    "bytes": 557728097
+  },
+  "source_manifest_sha256": "b468f6ce56c62e4f4f9fbd5284b94769df3a8294a39a91ccbb2a7e6ce8ba619c",
+  "checks": {
+    "full_application_build": "PASS",
+    "offline_installation_and_native_desktop": "PASS",
+    "seven_agent_registration_both_scopes": "PASS",
+    "unit_tests": 60,
+    "browser_parity": "NOT EXERCISED"
+  },
+  "fixture_correction": {
+    "file": "tests/registration.py",
+    "sha256": "93204f6b196294d2c9014f25cffec03268588fe10703dc80ace72941c7b729ca",
+    "reason": "Preserve original TOML writers: require semantic identity after first repeat and byte stability after subsequent repeat. Initial failure changed hook formatting only."
+  },
+  "evidence": {
+    "build.log": "550abe7e11c47dc7433821f66baaeed61df436d1c208c8747340234008568da7",
+    "offline.log": "e8131a53e0c80918482b0bb44a4061bde927fd6a040ae59b0a30367504e44354",
+    "registration-repro.log": "67142d30187e69e3532cca2236ad2424d37d4e4928044bff40ffc5c99f44ec11",
+    "registration-values.log": "c46eeea91fc117c720bdc6d63170eedc6fd74085019e45bde546dcd27845bf93",
+    "offline-verified.log": "fdc8408c3286223fbdfb4357faffba6132f8172197b44a30ed5d2d394070536d"
+  },
+  "local_evidence_directory": "/private/tmp/lcu-payload-check-lgvromgn",
+  "final_candidate": false
+}

@@ -1,0 +1,88 @@
+{
+  "source": "https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.915.31945_{deb_arch}.deb",
+  "version": "26.915.31945",
+  "runtime": "0.0.16/20260915001755-492f19756c31",
+  "architectures": {
+    "arm64": {
+      "deb_arch": "arm64",
+      "sha256": "b94c494b5f0fd7c720fa6fccd5ef609879affc62332ca930ed29b907d537bc6d",
+      "components": {
+        "ChatGPT": "15f4066aff635c8e4ffc39b3653cb8aa8b91481d731e88c8e5a7aaca5c133f41",
+        "resources/app.asar": "70b6f7f8df841ade1ee9910d93c46c5defaa26914624fe70498983719228bbc9",
+        "resources/cua_node/bin/node": "0f8949d1028f6d61506b2d5bc57e7e6fe893d7b1997509b7847294fc9c616584",
+        "resources/cua_node/bin/node_repl": "dd56678070aae3788052b79b62a145c279c61fcd3e9f7d9613905f2b4972a931",
+        "resources/cua_node/manifest.json": "8099665da0857dea828417f7e069d1077d8dee689523f98a39c2583bc2bdbfa7",
+        "resources/cua_node/lib/node_modules/@oai/cua-repl/bin/cua-repl.mjs": "992174a5e637645aeb444adfdb1bae688e997bb84d7db07532f68e358e60f278",
+        "resources/codex": "93f24dcb0b24d9f9ebe55b0c293d2e095ac76e3bb9b3feffb6c824ac67a10c8e",
+        "resources/codex-code-mode-host": "d05e48b9c8955f1f15780b3ca9708578a1da6fec07b0b89737c75f5acdf2ebb2",
+        "resources/plugins/openai-bundled/plugins/chrome/.codex-plugin/plugin.json": "1720b800ba7af063312c13ee7623011673621f3d29f9eb23c9d81fc0a560c93b",
+        "resources/plugins/openai-bundled/plugins/chrome/extension-host/linux/arm64/extension-host": "f95a820a5f025263f00b44eea861e2029c62d88be7a36a18a0882e6512bccc5f",
+        "resources/plugins/openai-bundled/plugins/unified-computer-use/.mcp.json": "e7297a8851d46bb5d7f53d57e82d86cfdf4b04524bedf8c2ce6cf4a80ffe71da"
+      }
+    },
+    "x64": {
+      "deb_arch": "amd64",
+      "sha256": "d27a9c02919cfe484dcc5f34584b9ea9fd0d7a65c69dcc872b5bdcfa0efb5983",
+      "components": {
+        "ChatGPT": "3ac47769a211d64007c7dd072142cd32f9cbea0aaeb5d1e632eec507689fa7a2",
+        "resources/app.asar": "8889a6e9aeba678a5d77876bcc9cfce3168ab47cc7bb4ba5856f80a3a32157a8",
+        "resources/cua_node/bin/node": "7fde7b8afa198da66257f42ee2001d874c7355631e6d1579a5fb5ef1f246df4c",
+        "resources/cua_node/bin/node_repl": "a42e393a4e1332014275ca64f41e5ce80137d32d57a24658e568fe5ab9ada3f9",
+        "resources/cua_node/manifest.json": "6d7e9fddae05247f08e2c1639b18f2f63ff429e062d89c1f13a6825b4a6341e2",
+        "resources/cua_node/lib/node_modules/@oai/cua-repl/bin/cua-repl.mjs": "992174a5e637645aeb444adfdb1bae688e997bb84d7db07532f68e358e60f278",
+        "resources/codex": "c544a899873ce1a51506304bb2818af6975a97715bb8c4c9ff0abd566a3fe3f6",
+        "resources/codex-code-mode-host": "8ae7c0ba6e1ddfb3b1b6210e0fd1b0860bb2c90d8b4ecfad44f27351b61b1c8a",
+        "resources/plugins/openai-bundled/plugins/chrome/.codex-plugin/plugin.json": "1720b800ba7af063312c13ee7623011673621f3d29f9eb23c9d81fc0a560c93b",
+        "resources/plugins/openai-bundled/plugins/chrome/extension-host/linux/x64/extension-host": "b3d387924712f51e962ade60aa151997d3c8ac0776875f93d65061d4078ca364",
+        "resources/plugins/openai-bundled/plugins/unified-computer-use/.mcp.json": "e7297a8851d46bb5d7f53d57e82d86cfdf4b04524bedf8c2ce6cf4a80ffe71da"
+      }
+    }
+  },
+  "platforms": {
+    "darwin": {
+      "version": "26.917.62051",
+      "runtime": "0.0.16/20260915001755-492f19756c31",
+      "architectures": {
+        "arm64": {
+          "components": {
+            "Resources/cua_node/bin/node": "185e384f0784005202c0ad19c569f6764c6109f1c9903a36417578d28322f68a",
+            "Resources/cua_node/bin/node_repl": "14989930cde236c46cd4731891197356c39670787355e061fb7050590e379aef",
+            "Resources/cua_node/lib/node_modules/@oai/cua-repl/bin/cua-repl.mjs": "992174a5e637645aeb444adfdb1bae688e997bb84d7db07532f68e358e60f278",
+            "Resources/codex": "c67698d0990aae05211d9c43ab343ad9517e406824dea77eca103a2806232b3a",
+            "Resources/codex-code-mode-host": "fbdee92a9ed9dd5f6388499d10c98b3628fb74d7cbeb91cc470083e08bc2005a",
+            "Resources/plugins/openai-bundled/plugins/unified-computer-use/.mcp.json": "e7297a8851d46bb5d7f53d57e82d86cfdf4b04524bedf8c2ce6cf4a80ffe71da",
+            "Resources/plugins/openai-bundled/plugins/chrome/.codex-plugin/plugin.json": "32721dd4b86cd0e5306266056d0eddc3192d92cd6a6b93ff1a0e08013c503420"
+          }
+        }
+      }
+    },
+    "windows": {
+      "source": "https://persistent.oaistatic.com/codex-app-prod/releases/26.917.9434.0/ChatGPT-x64.msix",
+      "version": "26.917.9434.0",
+      "runtime": "0.0.16/20260915001755-492f19756c31",
+      "architectures": {
+        "x64": {
+          "sha256": "9892383820c5505997456bde8385810afadd6076ae7fff9e3835a48ca0555c98",
+          "components": {
+            "app/ChatGPT.exe": "f1bffad855a0b39b9954764953ab0092995b48288d4125571bae393434734a86",
+            "app/resources/app.asar": "d4234b03eb532fe0f3e9a7d90caad51edb68af45f771cc786d966377e7446f5a",
+            "app/resources/cua_node/bin/node.exe": "a604969e8eb5154a3d5617ff377c13b439e2436ff2ef98e546a05bd234724d78",
+            "app/resources/cua_node/bin/node_repl.exe": "af7d3ce6f220fecac63206c7d6a45c9739aafbe928921fea0122d3f7dbe8a1d9",
+            "app/resources/cua_node/manifest.json": "32fbcc083060f8373d2a650ddd31ebace32b7fb120393c9d51c43955d21ef9ed",
+            "app/resources/cua_node/bin/node_modules/@oai/cua-repl/bin/cua-repl.mjs": "992174a5e637645aeb444adfdb1bae688e997bb84d7db07532f68e358e60f278",
+            "app/resources/cua_node/bin/node_modules/@oai/sky/dist/project/cua/sky_js/src/service.js": "5b2fa2f0e19c8401a9be8c71be17008d88049ab107972c1e4a5cb615f4ef5993",
+            "app/resources/cua_node/bin/node_modules/@oai/sky/dist/project/cua/sky_js/src/targets/windows/internal/helper_transport.js": "993249ea69056fa0e725c295d7e9fca0a3e608ffd3e3f8d1e7bc20bc1fef5ddf",
+            "app/resources/cua_node/bin/node_modules/@oai/sky/dist/project/cua/sky_js/src/targets/windows/internal/computer_use_client.js": "f72d64c30dfad7f8894cf31bc92a982df46c7ef4ece82cf03a41aab514e80365",
+            "app/resources/codex.exe": "9015c47d1714294ecd9033c4b5aefc3076797d867d1c36aa37749fcb76c8942f",
+            "app/resources/codex-code-mode-host.exe": "4e89591187d7c02e160fb0ad4cc19a7bed01ac5e701b1f7ccb88e6d72ab148ca",
+            "app/resources/plugins/openai-bundled/plugins/chrome/.codex-plugin/plugin.json": "9e59152afffaf744d419f3330e077bab28315c456eccdc08f3b3ed24f8e79ddf",
+            "app/resources/plugins/openai-bundled/plugins/chrome/extension-host/windows/x64/extension-host.exe": "7e82f82e03168378e0105181df918d55e6805706b449c55faaf8e43454187957",
+            "app/resources/plugins/openai-bundled/plugins/unified-computer-use/.mcp.json": "e7297a8851d46bb5d7f53d57e82d86cfdf4b04524bedf8c2ce6cf4a80ffe71da",
+            "app/resources/cua_node/bin/node_modules/@oai/sky/bin/windows/codex-computer-use.exe": "9493af2cebd3c11e2e38ce692f6ccd8e00f4320bdbbcf14f242d036a9736635f",
+            "app/resources/cua_node/bin/node_modules/@oai/sky/bin/windows/swift/x64/codex-computer-use-swift.exe": "17a126a8c308161abf3513d57930edbcb5993b97966afb974e10fba851d53561"
+          }
+        }
+      }
+    }
+  }
+}

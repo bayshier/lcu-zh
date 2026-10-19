@@ -1,0 +1,2185 @@
+{
+  "format": 2,
+  "package_version": "26.915.31945",
+  "policy": "Copy upstream instruction resources byte-for-byte; no exclusions or rewrites. Standalone integration notes live in the skill wrapper.",
+  "resource_roots": [
+    {
+      "scope": "modules",
+      "source": "@oai/cua/docs"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/sky/docs"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/dist/lib/js/oai_js_browser/dist/skill/references"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/skills"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/skills"
+    }
+  ],
+  "files": [
+    {
+      "scope": "modules",
+      "source": "@oai/cua/docs/tinysky-alt-confirmations.md",
+      "sha256": "68474884543a6a1e72275b59f27f383313fd6aa8604ccedabb5d5cd37077e6fc",
+      "targets": [
+        "instructions/api/tinysky-alt-confirmations.md",
+        "skills/lcu/references/confirmations.md"
+      ],
+      "edits": [],
+      "output_sha256": "68474884543a6a1e72275b59f27f383313fd6aa8604ccedabb5d5cd37077e6fc"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/docs/tinysky-alt-core-cua-repl.md",
+      "sha256": "416ed1677ab06745ec6e6d8aa781a9e29e6f339c569f3202c49d267c029e6426",
+      "targets": [
+        "instructions/api/tinysky-alt-core-cua-repl.md",
+        "skills/lcu/references/api.md"
+      ],
+      "edits": [],
+      "output_sha256": "416ed1677ab06745ec6e6d8aa781a9e29e6f339c569f3202c49d267c029e6426"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/docs/tinysky-alt-core-node-repl.md",
+      "sha256": "b195e918482cdc45fa1bc9888878440b81a78840ae574531e3127ecbf107a1d8",
+      "targets": [
+        "instructions/api/tinysky-alt-core-node-repl.md",
+        "skills/lcu/references/api-node-repl.md"
+      ],
+      "edits": [],
+      "output_sha256": "b195e918482cdc45fa1bc9888878440b81a78840ae574531e3127ecbf107a1d8"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/docs/tinysky-alt-other-browser-apis.md",
+      "sha256": "174672af7e028a5e4815318c4133fdab0a5189c5701396df837d7aac76e90fd4",
+      "targets": [
+        "instructions/api/tinysky-alt-other-browser-apis.md",
+        "skills/lcu/references/other-browser-apis.md"
+      ],
+      "edits": [],
+      "output_sha256": "174672af7e028a5e4815318c4133fdab0a5189c5701396df837d7aac76e90fd4"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/banner.js",
+      "sha256": "db4a56c4a1cb6f9ec2ca663694fbe8941846aaa83d0bf12d3a5699f92126105a",
+      "targets": [
+        "instructions/repl/banner.js",
+        "skills/lcu/references/repl/banner.js"
+      ],
+      "edits": [],
+      "output_sha256": "db4a56c4a1cb6f9ec2ca663694fbe8941846aaa83d0bf12d3a5699f92126105a"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/browser-disabled.md",
+      "sha256": "6d1be6d881b8b340dabb04d277bfc5c0690fb855031f023bc882284904dd6d9a",
+      "targets": [
+        "instructions/repl/browser-disabled.md",
+        "skills/lcu/references/repl/browser-disabled.md"
+      ],
+      "edits": [],
+      "output_sha256": "6d1be6d881b8b340dabb04d277bfc5c0690fb855031f023bc882284904dd6d9a"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/code.md",
+      "sha256": "c0cc551f6c6116c5276baecc68c1139d25c205570281e02b6ad483526e4bede9",
+      "targets": [
+        "instructions/repl/code.md",
+        "skills/lcu/references/repl/code.md"
+      ],
+      "edits": [],
+      "output_sha256": "c0cc551f6c6116c5276baecc68c1139d25c205570281e02b6ad483526e4bede9"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/computer-disabled.md",
+      "sha256": "c34c37e1549a55281eaecf6e29b4878313cfecf5983559a98a6fca1f6d1cf53c",
+      "targets": [
+        "instructions/repl/computer-disabled.md",
+        "skills/lcu/references/repl/computer-disabled.md"
+      ],
+      "edits": [],
+      "output_sha256": "c34c37e1549a55281eaecf6e29b4878313cfecf5983559a98a6fca1f6d1cf53c"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/linux/browser-cloud.md",
+      "sha256": "5ac97a866c1f1a76040d1e020fa7a0da953cb3abaf9eb508c051133160f43bc0",
+      "targets": [
+        "instructions/repl/linux/browser-cloud.md",
+        "skills/lcu/references/repl/linux/browser-cloud.md"
+      ],
+      "edits": [],
+      "output_sha256": "5ac97a866c1f1a76040d1e020fa7a0da953cb3abaf9eb508c051133160f43bc0"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/linux/browser.md",
+      "sha256": "59f010a2de5d86073278688faf3f5f18a6ed14f818671f6b4ed4aa4d64c98ccb",
+      "targets": [
+        "instructions/repl/linux/browser.md",
+        "skills/lcu/references/repl/linux/browser.md"
+      ],
+      "edits": [],
+      "output_sha256": "59f010a2de5d86073278688faf3f5f18a6ed14f818671f6b4ed4aa4d64c98ccb"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/linux/computer.md",
+      "sha256": "e8318bd16b9792b517d300802583961317d7e0cb3a3a4ed776a681ed20f16f7d",
+      "targets": [
+        "instructions/repl/linux/computer.md",
+        "skills/lcu/references/repl/linux/computer.md"
+      ],
+      "edits": [],
+      "output_sha256": "e8318bd16b9792b517d300802583961317d7e0cb3a3a4ed776a681ed20f16f7d"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/linux/description.md",
+      "sha256": "43cc1857cdae559e3ecf2ab4062c3a6f391a8ede8222b036a3eb8d3a4b2d1f18",
+      "targets": [
+        "instructions/repl/linux/description.md",
+        "skills/lcu/references/repl/linux/description.md"
+      ],
+      "edits": [],
+      "output_sha256": "43cc1857cdae559e3ecf2ab4062c3a6f391a8ede8222b036a3eb8d3a4b2d1f18"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/linux/output.md",
+      "sha256": "e239db8a09d3fb3b2a626e19a64be96da0130374675acf709649bef99430d486",
+      "targets": [
+        "instructions/repl/linux/output.md",
+        "skills/lcu/references/repl/linux/output.md"
+      ],
+      "edits": [],
+      "output_sha256": "e239db8a09d3fb3b2a626e19a64be96da0130374675acf709649bef99430d486"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/macos/browser-cloud.md",
+      "sha256": "5ac97a866c1f1a76040d1e020fa7a0da953cb3abaf9eb508c051133160f43bc0",
+      "targets": [
+        "instructions/repl/macos/browser-cloud.md",
+        "skills/lcu/references/repl/macos/browser-cloud.md"
+      ],
+      "edits": [],
+      "output_sha256": "5ac97a866c1f1a76040d1e020fa7a0da953cb3abaf9eb508c051133160f43bc0"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/macos/browser.md",
+      "sha256": "59f010a2de5d86073278688faf3f5f18a6ed14f818671f6b4ed4aa4d64c98ccb",
+      "targets": [
+        "instructions/repl/macos/browser.md",
+        "skills/lcu/references/repl/macos/browser.md"
+      ],
+      "edits": [],
+      "output_sha256": "59f010a2de5d86073278688faf3f5f18a6ed14f818671f6b4ed4aa4d64c98ccb"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/macos/computer.md",
+      "sha256": "e8318bd16b9792b517d300802583961317d7e0cb3a3a4ed776a681ed20f16f7d",
+      "targets": [
+        "instructions/repl/macos/computer.md",
+        "skills/lcu/references/repl/macos/computer.md"
+      ],
+      "edits": [],
+      "output_sha256": "e8318bd16b9792b517d300802583961317d7e0cb3a3a4ed776a681ed20f16f7d"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/macos/description.md",
+      "sha256": "43cc1857cdae559e3ecf2ab4062c3a6f391a8ede8222b036a3eb8d3a4b2d1f18",
+      "targets": [
+        "instructions/repl/macos/description.md",
+        "skills/lcu/references/repl/macos/description.md"
+      ],
+      "edits": [],
+      "output_sha256": "43cc1857cdae559e3ecf2ab4062c3a6f391a8ede8222b036a3eb8d3a4b2d1f18"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/macos/output.md",
+      "sha256": "e239db8a09d3fb3b2a626e19a64be96da0130374675acf709649bef99430d486",
+      "targets": [
+        "instructions/repl/macos/output.md",
+        "skills/lcu/references/repl/macos/output.md"
+      ],
+      "edits": [],
+      "output_sha256": "e239db8a09d3fb3b2a626e19a64be96da0130374675acf709649bef99430d486"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/reset.md",
+      "sha256": "8293a9ec45999391940bdfce1637fb5c4d708f89b5d726b4d03800df9cb795af",
+      "targets": [
+        "instructions/repl/reset.md",
+        "skills/lcu/references/repl/reset.md"
+      ],
+      "edits": [],
+      "output_sha256": "8293a9ec45999391940bdfce1637fb5c4d708f89b5d726b4d03800df9cb795af"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/server.md",
+      "sha256": "6001fb94250c49c234d96cbe08913ad9340e71e48b1709d8c0d598b46a25ea9e",
+      "targets": [
+        "instructions/repl/server.md",
+        "skills/lcu/references/repl/server.md"
+      ],
+      "edits": [],
+      "output_sha256": "6001fb94250c49c234d96cbe08913ad9340e71e48b1709d8c0d598b46a25ea9e"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/windows/browser-cloud.md",
+      "sha256": "5ac97a866c1f1a76040d1e020fa7a0da953cb3abaf9eb508c051133160f43bc0",
+      "targets": [
+        "instructions/repl/windows/browser-cloud.md",
+        "skills/lcu/references/repl/windows/browser-cloud.md"
+      ],
+      "edits": [],
+      "output_sha256": "5ac97a866c1f1a76040d1e020fa7a0da953cb3abaf9eb508c051133160f43bc0"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/windows/browser.md",
+      "sha256": "59f010a2de5d86073278688faf3f5f18a6ed14f818671f6b4ed4aa4d64c98ccb",
+      "targets": [
+        "instructions/repl/windows/browser.md",
+        "skills/lcu/references/repl/windows/browser.md"
+      ],
+      "edits": [],
+      "output_sha256": "59f010a2de5d86073278688faf3f5f18a6ed14f818671f6b4ed4aa4d64c98ccb"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/windows/computer.md",
+      "sha256": "e8318bd16b9792b517d300802583961317d7e0cb3a3a4ed776a681ed20f16f7d",
+      "targets": [
+        "instructions/repl/windows/computer.md",
+        "skills/lcu/references/repl/windows/computer.md"
+      ],
+      "edits": [],
+      "output_sha256": "e8318bd16b9792b517d300802583961317d7e0cb3a3a4ed776a681ed20f16f7d"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/windows/description.md",
+      "sha256": "43cc1857cdae559e3ecf2ab4062c3a6f391a8ede8222b036a3eb8d3a4b2d1f18",
+      "targets": [
+        "instructions/repl/windows/description.md",
+        "skills/lcu/references/repl/windows/description.md"
+      ],
+      "edits": [],
+      "output_sha256": "43cc1857cdae559e3ecf2ab4062c3a6f391a8ede8222b036a3eb8d3a4b2d1f18"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua-repl/instructions/windows/output.md",
+      "sha256": "e239db8a09d3fb3b2a626e19a64be96da0130374675acf709649bef99430d486",
+      "targets": [
+        "instructions/repl/windows/output.md",
+        "skills/lcu/references/repl/windows/output.md"
+      ],
+      "edits": [],
+      "output_sha256": "e239db8a09d3fb3b2a626e19a64be96da0130374675acf709649bef99430d486"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/sky/docs/skills/oai_sky_lib/linux/SKILL.md",
+      "sha256": "eb359da74f45692b55cf9d56e85484072e2d963907d23d877567c7b08ee1c056",
+      "targets": [
+        "instructions/sky/skills/oai_sky_lib/linux/SKILL.md",
+        "skills/lcu/references/linux-desktop.md"
+      ],
+      "edits": [],
+      "output_sha256": "eb359da74f45692b55cf9d56e85484072e2d963907d23d877567c7b08ee1c056"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/sky/docs/skills/oai_sky_lib/macos/SKILL.md",
+      "sha256": "368ca736ced2658e735da1dd955f99504a7ec617c9abac986c42da0d3b57f3d6",
+      "targets": [
+        "instructions/sky/skills/oai_sky_lib/macos/SKILL.md"
+      ],
+      "edits": [],
+      "output_sha256": "368ca736ced2658e735da1dd955f99504a7ec617c9abac986c42da0d3b57f3d6"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/sky/docs/skills/oai_sky_lib/windows/SKILL.md",
+      "sha256": "2283bfedb26c15548689360538a1baa0e839bc3fe7c83ec58d8fb82cecfb841b",
+      "targets": [
+        "instructions/sky/skills/oai_sky_lib/windows/SKILL.md"
+      ],
+      "edits": [],
+      "output_sha256": "2283bfedb26c15548689360538a1baa0e839bc3fe7c83ec58d8fb82cecfb841b"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/sky/docs/sky-full-desktop-api.md",
+      "sha256": "82fcb54d90f603c8209a4ac15dbb69b8bc3e05c9d9c90e4f20695b27c842f6da",
+      "targets": [
+        "instructions/sky/sky-full-desktop-api.md",
+        "skills/lcu/references/native-api.md"
+      ],
+      "edits": [],
+      "output_sha256": "82fcb54d90f603c8209a4ac15dbb69b8bc3e05c9d9c90e4f20695b27c842f6da"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/sky/docs/sky-window-api.md",
+      "sha256": "a601126e6609e957781889b731d31cb3fdd859d0c93faa432db3e65b4ecf82fb",
+      "targets": [
+        "instructions/sky/sky-window-api.md"
+      ],
+      "edits": [],
+      "output_sha256": "a601126e6609e957781889b731d31cb3fdd859d0c93faa432db3e65b4ecf82fb"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/sky/docs/sky-window2-api.md",
+      "sha256": "85fa55b935d78ce65381bfb316a2e7db7ae1927fc0eed96f8faf0543c9701cec",
+      "targets": [
+        "instructions/sky/sky-window2-api.md"
+      ],
+      "edits": [],
+      "output_sha256": "85fa55b935d78ce65381bfb316a2e7db7ae1927fc0eed96f8faf0543c9701cec"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/api-use-behavior.md",
+      "sha256": "9c648a2cbd94ada50bd855c5e9cb1ff2f33f6a2eff5d450d4b310fde336ec256",
+      "targets": [
+        "instructions/browser/cloud/api-use-behavior.md",
+        "skills/lcu/references/browser/cloud/api-use-behavior.md"
+      ],
+      "edits": [],
+      "output_sha256": "9c648a2cbd94ada50bd855c5e9cb1ff2f33f6a2eff5d450d4b310fde336ec256"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/api.json",
+      "sha256": "b773578792f67eb84c6d3ab7c2c8e11295f7006d981a00e90fade7a3627e06b0",
+      "targets": [
+        "instructions/browser/cloud/api.json",
+        "skills/lcu/references/browser/cloud/api.json"
+      ],
+      "edits": [],
+      "output_sha256": "b773578792f67eb84c6d3ab7c2c8e11295f7006d981a00e90fade7a3627e06b0"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/bootstrap-troubleshooting.md",
+      "sha256": "bbf69be0ecff6b45e70a71d96487a6932426b3377df389ec7376107e8c1e0416",
+      "targets": [
+        "instructions/browser/cloud/bootstrap-troubleshooting.md",
+        "skills/lcu/references/browser/cloud/bootstrap-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "bbf69be0ecff6b45e70a71d96487a6932426b3377df389ec7376107e8c1e0416"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/browser-safety.md",
+      "sha256": "9ae8500b67fed7bfd5b13a4ed0a3e340b12a8a7b7b9d83f9666068227424ae0b",
+      "targets": [
+        "instructions/browser/cloud/browser-safety.md",
+        "skills/lcu/references/browser/cloud/browser-safety.md"
+      ],
+      "edits": [],
+      "output_sha256": "9ae8500b67fed7bfd5b13a4ed0a3e340b12a8a7b7b9d83f9666068227424ae0b"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/browser-troubleshooting.md",
+      "sha256": "76ca57503fc2b11c602ad090326b6f0fec2d037826ec828607945f4c333b206b",
+      "targets": [
+        "instructions/browser/cloud/browser-troubleshooting.md",
+        "skills/lcu/references/browser/cloud/browser-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "76ca57503fc2b11c602ad090326b6f0fec2d037826ec828607945f4c333b206b"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/browserAuthSafetyPrecheck.md",
+      "sha256": "a0002fc9b9bcda1f6db4f759431e625321e45d68e02bacfb4f226d4542a94ee8",
+      "targets": [
+        "instructions/browser/cloud/browserAuthSafetyPrecheck.md",
+        "skills/lcu/references/browser/cloud/browserAuthSafetyPrecheck.md"
+      ],
+      "edits": [],
+      "output_sha256": "a0002fc9b9bcda1f6db4f759431e625321e45d68e02bacfb4f226d4542a94ee8"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/capabilities/browser/management.md",
+      "sha256": "c7718517d2e1db86b07f9b26e9f66c268e6f0e632ec2e204ec945c4cb2bd353e",
+      "targets": [
+        "instructions/browser/cloud/capabilities/browser/management.md",
+        "skills/lcu/references/browser/cloud/capabilities/browser/management.md"
+      ],
+      "edits": [],
+      "output_sha256": "c7718517d2e1db86b07f9b26e9f66c268e6f0e632ec2e204ec945c4cb2bd353e"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/capabilities/browser/viewport.md",
+      "sha256": "c9857bf5aae8bfc73630751363ce27204792b88b1cd95d4da19c03833501921a",
+      "targets": [
+        "instructions/browser/cloud/capabilities/browser/viewport.md",
+        "skills/lcu/references/browser/cloud/capabilities/browser/viewport.md"
+      ],
+      "edits": [],
+      "output_sha256": "c9857bf5aae8bfc73630751363ce27204792b88b1cd95d4da19c03833501921a"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/capabilities/browser/visibility.md",
+      "sha256": "8cb1588084cd3372ffc78b8c500dfa2f359d8a63a3c250f014fd55fad7336b08",
+      "targets": [
+        "instructions/browser/cloud/capabilities/browser/visibility.md",
+        "skills/lcu/references/browser/cloud/capabilities/browser/visibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "8cb1588084cd3372ffc78b8c500dfa2f359d8a63a3c250f014fd55fad7336b08"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/capabilities/tab/botDetection.md",
+      "sha256": "9e76653ad5e5dfe82392e929c30f8d2826b2a35a6ee9d25b3e52e7c797e94559",
+      "targets": [
+        "instructions/browser/cloud/capabilities/tab/botDetection.md",
+        "skills/lcu/references/browser/cloud/capabilities/tab/botDetection.md"
+      ],
+      "edits": [],
+      "output_sha256": "9e76653ad5e5dfe82392e929c30f8d2826b2a35a6ee9d25b3e52e7c797e94559"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/capabilities/tab/browserAuth.md",
+      "sha256": "e609790fc71260c967293cbdce7a2177e3f361cac6f6d2e5221cd3b8f52c6f7e",
+      "targets": [
+        "instructions/browser/cloud/capabilities/tab/browserAuth.md",
+        "skills/lcu/references/browser/cloud/capabilities/tab/browserAuth.md"
+      ],
+      "edits": [],
+      "output_sha256": "e609790fc71260c967293cbdce7a2177e3f361cac6f6d2e5221cd3b8f52c6f7e"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/capabilities/tab/cdp.md",
+      "sha256": "8e4d8cc937b7213d9c946f082762e31ece226b05ff42e49e535841c7209ac9a6",
+      "targets": [
+        "instructions/browser/cloud/capabilities/tab/cdp.md",
+        "skills/lcu/references/browser/cloud/capabilities/tab/cdp.md"
+      ],
+      "edits": [],
+      "output_sha256": "8e4d8cc937b7213d9c946f082762e31ece226b05ff42e49e535841c7209ac9a6"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/capabilities/tab/orbitBrowserAuth.md",
+      "sha256": "48765c7ee51a8480625c20b927177ac8d07f3ee7403d1f2cde1fe86d351dab83",
+      "targets": [
+        "instructions/browser/cloud/capabilities/tab/orbitBrowserAuth.md",
+        "skills/lcu/references/browser/cloud/capabilities/tab/orbitBrowserAuth.md"
+      ],
+      "edits": [],
+      "output_sha256": "48765c7ee51a8480625c20b927177ac8d07f3ee7403d1f2cde1fe86d351dab83"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/capabilities/tab/pageAssets.md",
+      "sha256": "aab1c766aa79202adcb79bb5539820b13f2f5ef5487a304fcf11ad74bbed06bc",
+      "targets": [
+        "instructions/browser/cloud/capabilities/tab/pageAssets.md",
+        "skills/lcu/references/browser/cloud/capabilities/tab/pageAssets.md"
+      ],
+      "edits": [],
+      "output_sha256": "aab1c766aa79202adcb79bb5539820b13f2f5ef5487a304fcf11ad74bbed06bc"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/cloud-auth.md",
+      "sha256": "8ab3ca3c0cbb5eec50b06c67c52819e6b3ca18444a68792fdce6ebdfb6622176",
+      "targets": [
+        "instructions/browser/cloud/cloud-auth.md",
+        "skills/lcu/references/browser/cloud/cloud-auth.md"
+      ],
+      "edits": [],
+      "output_sha256": "8ab3ca3c0cbb5eec50b06c67c52819e6b3ca18444a68792fdce6ebdfb6622176"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/cloud-no-auth.md",
+      "sha256": "20b08473ea4791ba902c896837bf0b5cec4998b416d5ab59facf34d2fbfe1600",
+      "targets": [
+        "instructions/browser/cloud/cloud-no-auth.md",
+        "skills/lcu/references/browser/cloud/cloud-no-auth.md"
+      ],
+      "edits": [],
+      "output_sha256": "20b08473ea4791ba902c896837bf0b5cec4998b416d5ab59facf34d2fbfe1600"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/cloud-shared-files.md",
+      "sha256": "4547e55b565305e94fa5ff82db81c6f65a400f9af4933e5cf6bf4cca9511111e",
+      "targets": [
+        "instructions/browser/cloud/cloud-shared-files.md",
+        "skills/lcu/references/browser/cloud/cloud-shared-files.md"
+      ],
+      "edits": [],
+      "output_sha256": "4547e55b565305e94fa5ff82db81c6f65a400f9af4933e5cf6bf4cca9511111e"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/confirmations.md",
+      "sha256": "5897041e3b121ac9193d69eac9d46e74c4eb3a77a5aa5f0e2dd06c0d5d22a458",
+      "targets": [
+        "instructions/browser/cloud/confirmations.md",
+        "skills/lcu/references/browser/cloud/confirmations.md"
+      ],
+      "edits": [],
+      "output_sha256": "5897041e3b121ac9193d69eac9d46e74c4eb3a77a5aa5f0e2dd06c0d5d22a458"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/documents.json",
+      "sha256": "138d038beb7284f2c241ca3956a23408eb099145cfb17bfa4e1bcba97a895d33",
+      "targets": [
+        "instructions/browser/cloud/documents.json",
+        "skills/lcu/references/browser/cloud/documents.json"
+      ],
+      "edits": [],
+      "output_sha256": "138d038beb7284f2c241ca3956a23408eb099145cfb17bfa4e1bcba97a895d33"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/file-uploads.md",
+      "sha256": "be58df64881903636d16bb11f65e98c8e77f34b82a2d27566df320284c9d37f6",
+      "targets": [
+        "instructions/browser/cloud/file-uploads.md",
+        "skills/lcu/references/browser/cloud/file-uploads.md"
+      ],
+      "edits": [],
+      "output_sha256": "be58df64881903636d16bb11f65e98c8e77f34b82a2d27566df320284c9d37f6"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/orbit-cloud-auth.md",
+      "sha256": "c9fdb15ee80c88924450417e166f875a1fa95446d1456dc561e0300f3918a823",
+      "targets": [
+        "instructions/browser/cloud/orbit-cloud-auth.md",
+        "skills/lcu/references/browser/cloud/orbit-cloud-auth.md"
+      ],
+      "edits": [],
+      "output_sha256": "c9fdb15ee80c88924450417e166f875a1fa95446d1456dc561e0300f3918a823"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/screenshots.md",
+      "sha256": "94cb633f79c309fdd84f14dac790d4ffa1b4bf20a2b6643e4e6111ba1c676cc4",
+      "targets": [
+        "instructions/browser/cloud/screenshots.md",
+        "skills/lcu/references/browser/cloud/screenshots.md"
+      ],
+      "edits": [],
+      "output_sha256": "94cb633f79c309fdd84f14dac790d4ffa1b4bf20a2b6643e4e6111ba1c676cc4"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/visibility.md",
+      "sha256": "7cb1870c425f6b80521722fe5091a76328d53c41bca69705277231e815610ed0",
+      "targets": [
+        "instructions/browser/cloud/visibility.md",
+        "skills/lcu/references/browser/cloud/visibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "7cb1870c425f6b80521722fe5091a76328d53c41bca69705277231e815610ed0"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/cloud/webmcp.md",
+      "sha256": "58222da9e228ef36bed3c293daee5cb62e9c3040fe8e017a7608e462c1c44dfc",
+      "targets": [
+        "instructions/browser/cloud/webmcp.md",
+        "skills/lcu/references/browser/cloud/webmcp.md"
+      ],
+      "edits": [],
+      "output_sha256": "58222da9e228ef36bed3c293daee5cb62e9c3040fe8e017a7608e462c1c44dfc"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/accessibility.md",
+      "sha256": "c0722e52ccd697b5622c1cd145ffde97ba1f096eeaf0b0f09a9e2be76e03e3f3",
+      "targets": [
+        "instructions/browser/codex-app/accessibility.md",
+        "skills/lcu/references/browser/codex-app/accessibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "c0722e52ccd697b5622c1cd145ffde97ba1f096eeaf0b0f09a9e2be76e03e3f3"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/api-use-behavior.md",
+      "sha256": "9c648a2cbd94ada50bd855c5e9cb1ff2f33f6a2eff5d450d4b310fde336ec256",
+      "targets": [
+        "instructions/browser/codex-app/api-use-behavior.md",
+        "skills/lcu/references/browser/codex-app/api-use-behavior.md"
+      ],
+      "edits": [],
+      "output_sha256": "9c648a2cbd94ada50bd855c5e9cb1ff2f33f6a2eff5d450d4b310fde336ec256"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/api.json",
+      "sha256": "b773578792f67eb84c6d3ab7c2c8e11295f7006d981a00e90fade7a3627e06b0",
+      "targets": [
+        "instructions/browser/codex-app/api.json",
+        "skills/lcu/references/browser/codex-app/api.json"
+      ],
+      "edits": [],
+      "output_sha256": "b773578792f67eb84c6d3ab7c2c8e11295f7006d981a00e90fade7a3627e06b0"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/bootstrap-troubleshooting.md",
+      "sha256": "bbf69be0ecff6b45e70a71d96487a6932426b3377df389ec7376107e8c1e0416",
+      "targets": [
+        "instructions/browser/codex-app/bootstrap-troubleshooting.md",
+        "skills/lcu/references/browser/codex-app/bootstrap-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "bbf69be0ecff6b45e70a71d96487a6932426b3377df389ec7376107e8c1e0416"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/browser-control-interruption.md",
+      "sha256": "2fd73066304bc822ce3fba35eeba6456a0505f32f2f1364424639a08e49d1d5a",
+      "targets": [
+        "instructions/browser/codex-app/browser-control-interruption.md",
+        "skills/lcu/references/browser/codex-app/browser-control-interruption.md"
+      ],
+      "edits": [],
+      "output_sha256": "2fd73066304bc822ce3fba35eeba6456a0505f32f2f1364424639a08e49d1d5a"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/browser-safety.md",
+      "sha256": "1d34bbfd82e75deaeaac667eed6c4df211568a358d9e99d94f4d444614964da8",
+      "targets": [
+        "instructions/browser/codex-app/browser-safety.md",
+        "skills/lcu/references/browser/codex-app/browser-safety.md"
+      ],
+      "edits": [],
+      "output_sha256": "1d34bbfd82e75deaeaac667eed6c4df211568a358d9e99d94f4d444614964da8"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/browser-troubleshooting.md",
+      "sha256": "76ca57503fc2b11c602ad090326b6f0fec2d037826ec828607945f4c333b206b",
+      "targets": [
+        "instructions/browser/codex-app/browser-troubleshooting.md",
+        "skills/lcu/references/browser/codex-app/browser-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "76ca57503fc2b11c602ad090326b6f0fec2d037826ec828607945f4c333b206b"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/capabilities/browser/management.md",
+      "sha256": "c7718517d2e1db86b07f9b26e9f66c268e6f0e632ec2e204ec945c4cb2bd353e",
+      "targets": [
+        "instructions/browser/codex-app/capabilities/browser/management.md",
+        "skills/lcu/references/browser/codex-app/capabilities/browser/management.md"
+      ],
+      "edits": [],
+      "output_sha256": "c7718517d2e1db86b07f9b26e9f66c268e6f0e632ec2e204ec945c4cb2bd353e"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/capabilities/browser/viewport.md",
+      "sha256": "c9857bf5aae8bfc73630751363ce27204792b88b1cd95d4da19c03833501921a",
+      "targets": [
+        "instructions/browser/codex-app/capabilities/browser/viewport.md",
+        "skills/lcu/references/browser/codex-app/capabilities/browser/viewport.md"
+      ],
+      "edits": [],
+      "output_sha256": "c9857bf5aae8bfc73630751363ce27204792b88b1cd95d4da19c03833501921a"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/capabilities/browser/visibility.md",
+      "sha256": "8cb1588084cd3372ffc78b8c500dfa2f359d8a63a3c250f014fd55fad7336b08",
+      "targets": [
+        "instructions/browser/codex-app/capabilities/browser/visibility.md",
+        "skills/lcu/references/browser/codex-app/capabilities/browser/visibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "8cb1588084cd3372ffc78b8c500dfa2f359d8a63a3c250f014fd55fad7336b08"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/capabilities/tab/botDetection.md",
+      "sha256": "9e76653ad5e5dfe82392e929c30f8d2826b2a35a6ee9d25b3e52e7c797e94559",
+      "targets": [
+        "instructions/browser/codex-app/capabilities/tab/botDetection.md",
+        "skills/lcu/references/browser/codex-app/capabilities/tab/botDetection.md"
+      ],
+      "edits": [],
+      "output_sha256": "9e76653ad5e5dfe82392e929c30f8d2826b2a35a6ee9d25b3e52e7c797e94559"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/capabilities/tab/browserAuth.md",
+      "sha256": "e609790fc71260c967293cbdce7a2177e3f361cac6f6d2e5221cd3b8f52c6f7e",
+      "targets": [
+        "instructions/browser/codex-app/capabilities/tab/browserAuth.md",
+        "skills/lcu/references/browser/codex-app/capabilities/tab/browserAuth.md"
+      ],
+      "edits": [],
+      "output_sha256": "e609790fc71260c967293cbdce7a2177e3f361cac6f6d2e5221cd3b8f52c6f7e"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/capabilities/tab/cdp.md",
+      "sha256": "8e4d8cc937b7213d9c946f082762e31ece226b05ff42e49e535841c7209ac9a6",
+      "targets": [
+        "instructions/browser/codex-app/capabilities/tab/cdp.md",
+        "skills/lcu/references/browser/codex-app/capabilities/tab/cdp.md"
+      ],
+      "edits": [],
+      "output_sha256": "8e4d8cc937b7213d9c946f082762e31ece226b05ff42e49e535841c7209ac9a6"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/capabilities/tab/pageAssets.md",
+      "sha256": "aab1c766aa79202adcb79bb5539820b13f2f5ef5487a304fcf11ad74bbed06bc",
+      "targets": [
+        "instructions/browser/codex-app/capabilities/tab/pageAssets.md",
+        "skills/lcu/references/browser/codex-app/capabilities/tab/pageAssets.md"
+      ],
+      "edits": [],
+      "output_sha256": "aab1c766aa79202adcb79bb5539820b13f2f5ef5487a304fcf11ad74bbed06bc"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/chrome-file-upload-troubleshooting.md",
+      "sha256": "fe75442ac53d6a0fe5e45712e86d2ab0d40318b113d0c74121f4bb84e9460182",
+      "targets": [
+        "instructions/browser/codex-app/chrome-file-upload-troubleshooting.md",
+        "skills/lcu/references/browser/codex-app/chrome-file-upload-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "fe75442ac53d6a0fe5e45712e86d2ab0d40318b113d0c74121f4bb84e9460182"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/chrome-troubleshooting.md",
+      "sha256": "70b27f1b1331e81653b0bcb0c84b91ee7e884304bb7a2c6d5df60133df482580",
+      "targets": [
+        "instructions/browser/codex-app/chrome-troubleshooting.md",
+        "skills/lcu/references/browser/codex-app/chrome-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "70b27f1b1331e81653b0bcb0c84b91ee7e884304bb7a2c6d5df60133df482580"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/confirmations.md",
+      "sha256": "5897041e3b121ac9193d69eac9d46e74c4eb3a77a5aa5f0e2dd06c0d5d22a458",
+      "targets": [
+        "instructions/browser/codex-app/confirmations.md",
+        "skills/lcu/references/browser/codex-app/confirmations.md"
+      ],
+      "edits": [],
+      "output_sha256": "5897041e3b121ac9193d69eac9d46e74c4eb3a77a5aa5f0e2dd06c0d5d22a458"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/documents.json",
+      "sha256": "92a95c6bcc8836ab3c2f15b9e7d0a36247682dda6807fd9fe0945f1be2e7a91b",
+      "targets": [
+        "instructions/browser/codex-app/documents.json",
+        "skills/lcu/references/browser/codex-app/documents.json"
+      ],
+      "edits": [],
+      "output_sha256": "92a95c6bcc8836ab3c2f15b9e7d0a36247682dda6807fd9fe0945f1be2e7a91b"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/file-uploads.md",
+      "sha256": "be58df64881903636d16bb11f65e98c8e77f34b82a2d27566df320284c9d37f6",
+      "targets": [
+        "instructions/browser/codex-app/file-uploads.md",
+        "skills/lcu/references/browser/codex-app/file-uploads.md"
+      ],
+      "edits": [],
+      "output_sha256": "be58df64881903636d16bb11f65e98c8e77f34b82a2d27566df320284c9d37f6"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/local-web-development.md",
+      "sha256": "0bc8a4455b4469e17bd4cfd5192d90d079fcaa9894fbd763552281117535a32c",
+      "targets": [
+        "instructions/browser/codex-app/local-web-development.md",
+        "skills/lcu/references/browser/codex-app/local-web-development.md"
+      ],
+      "edits": [],
+      "output_sha256": "0bc8a4455b4469e17bd4cfd5192d90d079fcaa9894fbd763552281117535a32c"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/screenshots.md",
+      "sha256": "94cb633f79c309fdd84f14dac790d4ffa1b4bf20a2b6643e4e6111ba1c676cc4",
+      "targets": [
+        "instructions/browser/codex-app/screenshots.md",
+        "skills/lcu/references/browser/codex-app/screenshots.md"
+      ],
+      "edits": [],
+      "output_sha256": "94cb633f79c309fdd84f14dac790d4ffa1b4bf20a2b6643e4e6111ba1c676cc4"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/session-naming.md",
+      "sha256": "385cfcc20ff5778b81c59f218152381f65c9fd4ad0970bb59c847a009726a003",
+      "targets": [
+        "instructions/browser/codex-app/session-naming.md",
+        "skills/lcu/references/browser/codex-app/session-naming.md"
+      ],
+      "edits": [],
+      "output_sha256": "385cfcc20ff5778b81c59f218152381f65c9fd4ad0970bb59c847a009726a003"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/tab-claiming-chrome.md",
+      "sha256": "58bdb8d36284eb72e7ed8b1099e83acc01880df4cecebbc8a5c34c7f567fcc33",
+      "targets": [
+        "instructions/browser/codex-app/tab-claiming-chrome.md",
+        "skills/lcu/references/browser/codex-app/tab-claiming-chrome.md"
+      ],
+      "edits": [],
+      "output_sha256": "58bdb8d36284eb72e7ed8b1099e83acc01880df4cecebbc8a5c34c7f567fcc33"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/tab-cleanup-chrome.md",
+      "sha256": "636f80eef8b88a734cb3ba8a20cb0d1cca034d2833066addf04807d143c79be2",
+      "targets": [
+        "instructions/browser/codex-app/tab-cleanup-chrome.md",
+        "skills/lcu/references/browser/codex-app/tab-cleanup-chrome.md"
+      ],
+      "edits": [],
+      "output_sha256": "636f80eef8b88a734cb3ba8a20cb0d1cca034d2833066addf04807d143c79be2"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/tab-cleanup-iab.md",
+      "sha256": "23593b4f6d3828ffbbd88bb8322c8c135957d5d01c219b7e431478c565772b74",
+      "targets": [
+        "instructions/browser/codex-app/tab-cleanup-iab.md",
+        "skills/lcu/references/browser/codex-app/tab-cleanup-iab.md"
+      ],
+      "edits": [],
+      "output_sha256": "23593b4f6d3828ffbbd88bb8322c8c135957d5d01c219b7e431478c565772b74"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/tab-mentions-iab.md",
+      "sha256": "10a36c2bd1b856c1b594fc36b5280f2cad5391be971ba8a5b834924fa76763cb",
+      "targets": [
+        "instructions/browser/codex-app/tab-mentions-iab.md",
+        "skills/lcu/references/browser/codex-app/tab-mentions-iab.md"
+      ],
+      "edits": [],
+      "output_sha256": "10a36c2bd1b856c1b594fc36b5280f2cad5391be971ba8a5b834924fa76763cb"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/visibility.md",
+      "sha256": "7cb1870c425f6b80521722fe5091a76328d53c41bca69705277231e815610ed0",
+      "targets": [
+        "instructions/browser/codex-app/visibility.md",
+        "skills/lcu/references/browser/codex-app/visibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "7cb1870c425f6b80521722fe5091a76328d53c41bca69705277231e815610ed0"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/codex-app/webmcp.md",
+      "sha256": "58222da9e228ef36bed3c293daee5cb62e9c3040fe8e017a7608e462c1c44dfc",
+      "targets": [
+        "instructions/browser/codex-app/webmcp.md",
+        "skills/lcu/references/browser/codex-app/webmcp.md"
+      ],
+      "edits": [],
+      "output_sha256": "58222da9e228ef36bed3c293daee5cb62e9c3040fe8e017a7608e462c1c44dfc"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/api-use-behavior.md",
+      "sha256": "9c648a2cbd94ada50bd855c5e9cb1ff2f33f6a2eff5d450d4b310fde336ec256",
+      "targets": [
+        "instructions/browser/orbit/api-use-behavior.md",
+        "skills/lcu/references/browser/orbit/api-use-behavior.md"
+      ],
+      "edits": [],
+      "output_sha256": "9c648a2cbd94ada50bd855c5e9cb1ff2f33f6a2eff5d450d4b310fde336ec256"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/api.json",
+      "sha256": "b773578792f67eb84c6d3ab7c2c8e11295f7006d981a00e90fade7a3627e06b0",
+      "targets": [
+        "instructions/browser/orbit/api.json",
+        "skills/lcu/references/browser/orbit/api.json"
+      ],
+      "edits": [],
+      "output_sha256": "b773578792f67eb84c6d3ab7c2c8e11295f7006d981a00e90fade7a3627e06b0"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/bootstrap-troubleshooting.md",
+      "sha256": "bbf69be0ecff6b45e70a71d96487a6932426b3377df389ec7376107e8c1e0416",
+      "targets": [
+        "instructions/browser/orbit/bootstrap-troubleshooting.md",
+        "skills/lcu/references/browser/orbit/bootstrap-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "bbf69be0ecff6b45e70a71d96487a6932426b3377df389ec7376107e8c1e0416"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/browser-auth-orbit-intro.md",
+      "sha256": "3d9799be0c31725937df1192e0e0172dc6f361ab2b9f85f41a16c60c5ad89815",
+      "targets": [
+        "instructions/browser/orbit/browser-auth-orbit-intro.md",
+        "skills/lcu/references/browser/orbit/browser-auth-orbit-intro.md"
+      ],
+      "edits": [],
+      "output_sha256": "3d9799be0c31725937df1192e0e0172dc6f361ab2b9f85f41a16c60c5ad89815"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/browser-safety.md",
+      "sha256": "9ae8500b67fed7bfd5b13a4ed0a3e340b12a8a7b7b9d83f9666068227424ae0b",
+      "targets": [
+        "instructions/browser/orbit/browser-safety.md",
+        "skills/lcu/references/browser/orbit/browser-safety.md"
+      ],
+      "edits": [],
+      "output_sha256": "9ae8500b67fed7bfd5b13a4ed0a3e340b12a8a7b7b9d83f9666068227424ae0b"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/browser-troubleshooting.md",
+      "sha256": "76ca57503fc2b11c602ad090326b6f0fec2d037826ec828607945f4c333b206b",
+      "targets": [
+        "instructions/browser/orbit/browser-troubleshooting.md",
+        "skills/lcu/references/browser/orbit/browser-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "76ca57503fc2b11c602ad090326b6f0fec2d037826ec828607945f4c333b206b"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/browserAuthSafetyPrecheck.md",
+      "sha256": "a0002fc9b9bcda1f6db4f759431e625321e45d68e02bacfb4f226d4542a94ee8",
+      "targets": [
+        "instructions/browser/orbit/browserAuthSafetyPrecheck.md",
+        "skills/lcu/references/browser/orbit/browserAuthSafetyPrecheck.md"
+      ],
+      "edits": [],
+      "output_sha256": "a0002fc9b9bcda1f6db4f759431e625321e45d68e02bacfb4f226d4542a94ee8"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/capabilities/browser/management.md",
+      "sha256": "c7718517d2e1db86b07f9b26e9f66c268e6f0e632ec2e204ec945c4cb2bd353e",
+      "targets": [
+        "instructions/browser/orbit/capabilities/browser/management.md",
+        "skills/lcu/references/browser/orbit/capabilities/browser/management.md"
+      ],
+      "edits": [],
+      "output_sha256": "c7718517d2e1db86b07f9b26e9f66c268e6f0e632ec2e204ec945c4cb2bd353e"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/capabilities/browser/viewport.md",
+      "sha256": "c9857bf5aae8bfc73630751363ce27204792b88b1cd95d4da19c03833501921a",
+      "targets": [
+        "instructions/browser/orbit/capabilities/browser/viewport.md",
+        "skills/lcu/references/browser/orbit/capabilities/browser/viewport.md"
+      ],
+      "edits": [],
+      "output_sha256": "c9857bf5aae8bfc73630751363ce27204792b88b1cd95d4da19c03833501921a"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/capabilities/browser/visibility.md",
+      "sha256": "8cb1588084cd3372ffc78b8c500dfa2f359d8a63a3c250f014fd55fad7336b08",
+      "targets": [
+        "instructions/browser/orbit/capabilities/browser/visibility.md",
+        "skills/lcu/references/browser/orbit/capabilities/browser/visibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "8cb1588084cd3372ffc78b8c500dfa2f359d8a63a3c250f014fd55fad7336b08"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/capabilities/tab/botDetection.md",
+      "sha256": "9e76653ad5e5dfe82392e929c30f8d2826b2a35a6ee9d25b3e52e7c797e94559",
+      "targets": [
+        "instructions/browser/orbit/capabilities/tab/botDetection.md",
+        "skills/lcu/references/browser/orbit/capabilities/tab/botDetection.md"
+      ],
+      "edits": [],
+      "output_sha256": "9e76653ad5e5dfe82392e929c30f8d2826b2a35a6ee9d25b3e52e7c797e94559"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/capabilities/tab/browserAuth.md",
+      "sha256": "f7744ce6b141e6e302e671d5049b033b45347e3e17979ff85d132eb9c5a246fd",
+      "targets": [
+        "instructions/browser/orbit/capabilities/tab/browserAuth.md",
+        "skills/lcu/references/browser/orbit/capabilities/tab/browserAuth.md"
+      ],
+      "edits": [],
+      "output_sha256": "f7744ce6b141e6e302e671d5049b033b45347e3e17979ff85d132eb9c5a246fd"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/capabilities/tab/cdp.md",
+      "sha256": "8e4d8cc937b7213d9c946f082762e31ece226b05ff42e49e535841c7209ac9a6",
+      "targets": [
+        "instructions/browser/orbit/capabilities/tab/cdp.md",
+        "skills/lcu/references/browser/orbit/capabilities/tab/cdp.md"
+      ],
+      "edits": [],
+      "output_sha256": "8e4d8cc937b7213d9c946f082762e31ece226b05ff42e49e535841c7209ac9a6"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/capabilities/tab/orbitBrowserAuth.md",
+      "sha256": "f7744ce6b141e6e302e671d5049b033b45347e3e17979ff85d132eb9c5a246fd",
+      "targets": [
+        "instructions/browser/orbit/capabilities/tab/orbitBrowserAuth.md",
+        "skills/lcu/references/browser/orbit/capabilities/tab/orbitBrowserAuth.md"
+      ],
+      "edits": [],
+      "output_sha256": "f7744ce6b141e6e302e671d5049b033b45347e3e17979ff85d132eb9c5a246fd"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/capabilities/tab/pageAssets.md",
+      "sha256": "aab1c766aa79202adcb79bb5539820b13f2f5ef5487a304fcf11ad74bbed06bc",
+      "targets": [
+        "instructions/browser/orbit/capabilities/tab/pageAssets.md",
+        "skills/lcu/references/browser/orbit/capabilities/tab/pageAssets.md"
+      ],
+      "edits": [],
+      "output_sha256": "aab1c766aa79202adcb79bb5539820b13f2f5ef5487a304fcf11ad74bbed06bc"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/cloud-no-auth.md",
+      "sha256": "99931f634e1e0cefffac760dd3d8942dfb2e5713e8b9381fad00660e897888e9",
+      "targets": [
+        "instructions/browser/orbit/cloud-no-auth.md",
+        "skills/lcu/references/browser/orbit/cloud-no-auth.md"
+      ],
+      "edits": [],
+      "output_sha256": "99931f634e1e0cefffac760dd3d8942dfb2e5713e8b9381fad00660e897888e9"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/cloud-shared-files.md",
+      "sha256": "4547e55b565305e94fa5ff82db81c6f65a400f9af4933e5cf6bf4cca9511111e",
+      "targets": [
+        "instructions/browser/orbit/cloud-shared-files.md",
+        "skills/lcu/references/browser/orbit/cloud-shared-files.md"
+      ],
+      "edits": [],
+      "output_sha256": "4547e55b565305e94fa5ff82db81c6f65a400f9af4933e5cf6bf4cca9511111e"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/confirmations.md",
+      "sha256": "5897041e3b121ac9193d69eac9d46e74c4eb3a77a5aa5f0e2dd06c0d5d22a458",
+      "targets": [
+        "instructions/browser/orbit/confirmations.md",
+        "skills/lcu/references/browser/orbit/confirmations.md"
+      ],
+      "edits": [],
+      "output_sha256": "5897041e3b121ac9193d69eac9d46e74c4eb3a77a5aa5f0e2dd06c0d5d22a458"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/documents.json",
+      "sha256": "4dea457adc32540bce5d2cc751e6fa5af39679aa96e7fe8b18f71d3644db4315",
+      "targets": [
+        "instructions/browser/orbit/documents.json",
+        "skills/lcu/references/browser/orbit/documents.json"
+      ],
+      "edits": [],
+      "output_sha256": "4dea457adc32540bce5d2cc751e6fa5af39679aa96e7fe8b18f71d3644db4315"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/file-uploads.md",
+      "sha256": "be58df64881903636d16bb11f65e98c8e77f34b82a2d27566df320284c9d37f6",
+      "targets": [
+        "instructions/browser/orbit/file-uploads.md",
+        "skills/lcu/references/browser/orbit/file-uploads.md"
+      ],
+      "edits": [],
+      "output_sha256": "be58df64881903636d16bb11f65e98c8e77f34b82a2d27566df320284c9d37f6"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/orbit-auth.md",
+      "sha256": "171c1dd37cbc7ccbe08548759adc82ca3763d542a530ac1c8f8ca5c77ced10ca",
+      "targets": [
+        "instructions/browser/orbit/orbit-auth.md",
+        "skills/lcu/references/browser/orbit/orbit-auth.md"
+      ],
+      "edits": [],
+      "output_sha256": "171c1dd37cbc7ccbe08548759adc82ca3763d542a530ac1c8f8ca5c77ced10ca"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/orbit-cloud-auth.md",
+      "sha256": "171c1dd37cbc7ccbe08548759adc82ca3763d542a530ac1c8f8ca5c77ced10ca",
+      "targets": [
+        "instructions/browser/orbit/orbit-cloud-auth.md",
+        "skills/lcu/references/browser/orbit/orbit-cloud-auth.md"
+      ],
+      "edits": [],
+      "output_sha256": "171c1dd37cbc7ccbe08548759adc82ca3763d542a530ac1c8f8ca5c77ced10ca"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/screenshots.md",
+      "sha256": "94cb633f79c309fdd84f14dac790d4ffa1b4bf20a2b6643e4e6111ba1c676cc4",
+      "targets": [
+        "instructions/browser/orbit/screenshots.md",
+        "skills/lcu/references/browser/orbit/screenshots.md"
+      ],
+      "edits": [],
+      "output_sha256": "94cb633f79c309fdd84f14dac790d4ffa1b4bf20a2b6643e4e6111ba1c676cc4"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/visibility.md",
+      "sha256": "7cb1870c425f6b80521722fe5091a76328d53c41bca69705277231e815610ed0",
+      "targets": [
+        "instructions/browser/orbit/visibility.md",
+        "skills/lcu/references/browser/orbit/visibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "7cb1870c425f6b80521722fe5091a76328d53c41bca69705277231e815610ed0"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/orbit/webmcp.md",
+      "sha256": "58222da9e228ef36bed3c293daee5cb62e9c3040fe8e017a7608e462c1c44dfc",
+      "targets": [
+        "instructions/browser/orbit/webmcp.md",
+        "skills/lcu/references/browser/orbit/webmcp.md"
+      ],
+      "edits": [],
+      "output_sha256": "58222da9e228ef36bed3c293daee5cb62e9c3040fe8e017a7608e462c1c44dfc"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/training/api.json",
+      "sha256": "b773578792f67eb84c6d3ab7c2c8e11295f7006d981a00e90fade7a3627e06b0",
+      "targets": [
+        "instructions/browser/training/api.json",
+        "skills/lcu/references/browser/training/api.json"
+      ],
+      "edits": [],
+      "output_sha256": "b773578792f67eb84c6d3ab7c2c8e11295f7006d981a00e90fade7a3627e06b0"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/training/bootstrap-troubleshooting.md",
+      "sha256": "bbf69be0ecff6b45e70a71d96487a6932426b3377df389ec7376107e8c1e0416",
+      "targets": [
+        "instructions/browser/training/bootstrap-troubleshooting.md",
+        "skills/lcu/references/browser/training/bootstrap-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "bbf69be0ecff6b45e70a71d96487a6932426b3377df389ec7376107e8c1e0416"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/training/browser-safety-training.md",
+      "sha256": "734079c58cdd938673c73a84fe6bd9f1ed131d411f7e4cce9cf6b11819c79e41",
+      "targets": [
+        "instructions/browser/training/browser-safety-training.md",
+        "skills/lcu/references/browser/training/browser-safety-training.md"
+      ],
+      "edits": [],
+      "output_sha256": "734079c58cdd938673c73a84fe6bd9f1ed131d411f7e4cce9cf6b11819c79e41"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/training/browser-troubleshooting.md",
+      "sha256": "76ca57503fc2b11c602ad090326b6f0fec2d037826ec828607945f4c333b206b",
+      "targets": [
+        "instructions/browser/training/browser-troubleshooting.md",
+        "skills/lcu/references/browser/training/browser-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "76ca57503fc2b11c602ad090326b6f0fec2d037826ec828607945f4c333b206b"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/training/capabilities/browser/management.md",
+      "sha256": "c7718517d2e1db86b07f9b26e9f66c268e6f0e632ec2e204ec945c4cb2bd353e",
+      "targets": [
+        "instructions/browser/training/capabilities/browser/management.md",
+        "skills/lcu/references/browser/training/capabilities/browser/management.md"
+      ],
+      "edits": [],
+      "output_sha256": "c7718517d2e1db86b07f9b26e9f66c268e6f0e632ec2e204ec945c4cb2bd353e"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/training/capabilities/browser/viewport.md",
+      "sha256": "c9857bf5aae8bfc73630751363ce27204792b88b1cd95d4da19c03833501921a",
+      "targets": [
+        "instructions/browser/training/capabilities/browser/viewport.md",
+        "skills/lcu/references/browser/training/capabilities/browser/viewport.md"
+      ],
+      "edits": [],
+      "output_sha256": "c9857bf5aae8bfc73630751363ce27204792b88b1cd95d4da19c03833501921a"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/training/capabilities/browser/visibility.md",
+      "sha256": "8cb1588084cd3372ffc78b8c500dfa2f359d8a63a3c250f014fd55fad7336b08",
+      "targets": [
+        "instructions/browser/training/capabilities/browser/visibility.md",
+        "skills/lcu/references/browser/training/capabilities/browser/visibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "8cb1588084cd3372ffc78b8c500dfa2f359d8a63a3c250f014fd55fad7336b08"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/training/capabilities/tab/botDetection.md",
+      "sha256": "9e76653ad5e5dfe82392e929c30f8d2826b2a35a6ee9d25b3e52e7c797e94559",
+      "targets": [
+        "instructions/browser/training/capabilities/tab/botDetection.md",
+        "skills/lcu/references/browser/training/capabilities/tab/botDetection.md"
+      ],
+      "edits": [],
+      "output_sha256": "9e76653ad5e5dfe82392e929c30f8d2826b2a35a6ee9d25b3e52e7c797e94559"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/training/capabilities/tab/browserAuth.md",
+      "sha256": "e609790fc71260c967293cbdce7a2177e3f361cac6f6d2e5221cd3b8f52c6f7e",
+      "targets": [
+        "instructions/browser/training/capabilities/tab/browserAuth.md",
+        "skills/lcu/references/browser/training/capabilities/tab/browserAuth.md"
+      ],
+      "edits": [],
+      "output_sha256": "e609790fc71260c967293cbdce7a2177e3f361cac6f6d2e5221cd3b8f52c6f7e"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/training/capabilities/tab/cdp.md",
+      "sha256": "8e4d8cc937b7213d9c946f082762e31ece226b05ff42e49e535841c7209ac9a6",
+      "targets": [
+        "instructions/browser/training/capabilities/tab/cdp.md",
+        "skills/lcu/references/browser/training/capabilities/tab/cdp.md"
+      ],
+      "edits": [],
+      "output_sha256": "8e4d8cc937b7213d9c946f082762e31ece226b05ff42e49e535841c7209ac9a6"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/training/capabilities/tab/pageAssets.md",
+      "sha256": "aab1c766aa79202adcb79bb5539820b13f2f5ef5487a304fcf11ad74bbed06bc",
+      "targets": [
+        "instructions/browser/training/capabilities/tab/pageAssets.md",
+        "skills/lcu/references/browser/training/capabilities/tab/pageAssets.md"
+      ],
+      "edits": [],
+      "output_sha256": "aab1c766aa79202adcb79bb5539820b13f2f5ef5487a304fcf11ad74bbed06bc"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/training/documents.json",
+      "sha256": "5a17e1774c3cdc2a8ac4fb48ac50276ac19a92506133c0aa552246be956b7a72",
+      "targets": [
+        "instructions/browser/training/documents.json",
+        "skills/lcu/references/browser/training/documents.json"
+      ],
+      "edits": [],
+      "output_sha256": "5a17e1774c3cdc2a8ac4fb48ac50276ac19a92506133c0aa552246be956b7a72"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/training/file-uploads.md",
+      "sha256": "be58df64881903636d16bb11f65e98c8e77f34b82a2d27566df320284c9d37f6",
+      "targets": [
+        "instructions/browser/training/file-uploads.md",
+        "skills/lcu/references/browser/training/file-uploads.md"
+      ],
+      "edits": [],
+      "output_sha256": "be58df64881903636d16bb11f65e98c8e77f34b82a2d27566df320284c9d37f6"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/browser-desktop/environment-docs/training/visibility.md",
+      "sha256": "7cb1870c425f6b80521722fe5091a76328d53c41bca69705277231e815610ed0",
+      "targets": [
+        "instructions/browser/training/visibility.md",
+        "skills/lcu/references/browser/training/visibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "7cb1870c425f6b80521722fe5091a76328d53c41bca69705277231e815610ed0"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/dist/lib/js/oai_js_browser/dist/skill/references/api.json",
+      "sha256": "b773578792f67eb84c6d3ab7c2c8e11295f7006d981a00e90fade7a3627e06b0",
+      "targets": [
+        "instructions/browser-shared/api.json",
+        "skills/lcu/references/browser-shared/api.json"
+      ],
+      "edits": [],
+      "output_sha256": "b773578792f67eb84c6d3ab7c2c8e11295f7006d981a00e90fade7a3627e06b0"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/dist/lib/js/oai_js_browser/dist/skill/references/bootstrap-troubleshooting.md",
+      "sha256": "bbf69be0ecff6b45e70a71d96487a6932426b3377df389ec7376107e8c1e0416",
+      "targets": [
+        "instructions/browser-shared/bootstrap-troubleshooting.md",
+        "skills/lcu/references/browser-shared/bootstrap-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "bbf69be0ecff6b45e70a71d96487a6932426b3377df389ec7376107e8c1e0416"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/dist/lib/js/oai_js_browser/dist/skill/references/browser-safety-training.md",
+      "sha256": "734079c58cdd938673c73a84fe6bd9f1ed131d411f7e4cce9cf6b11819c79e41",
+      "targets": [
+        "instructions/browser-shared/browser-safety-training.md",
+        "skills/lcu/references/browser-shared/browser-safety-training.md"
+      ],
+      "edits": [],
+      "output_sha256": "734079c58cdd938673c73a84fe6bd9f1ed131d411f7e4cce9cf6b11819c79e41"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/dist/lib/js/oai_js_browser/dist/skill/references/browser-troubleshooting.md",
+      "sha256": "76ca57503fc2b11c602ad090326b6f0fec2d037826ec828607945f4c333b206b",
+      "targets": [
+        "instructions/browser-shared/browser-troubleshooting.md",
+        "skills/lcu/references/browser-shared/browser-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "76ca57503fc2b11c602ad090326b6f0fec2d037826ec828607945f4c333b206b"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/dist/lib/js/oai_js_browser/dist/skill/references/capabilities/browser/management.md",
+      "sha256": "c7718517d2e1db86b07f9b26e9f66c268e6f0e632ec2e204ec945c4cb2bd353e",
+      "targets": [
+        "instructions/browser-shared/capabilities/browser/management.md",
+        "skills/lcu/references/browser-shared/capabilities/browser/management.md"
+      ],
+      "edits": [],
+      "output_sha256": "c7718517d2e1db86b07f9b26e9f66c268e6f0e632ec2e204ec945c4cb2bd353e"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/dist/lib/js/oai_js_browser/dist/skill/references/capabilities/browser/viewport.md",
+      "sha256": "c9857bf5aae8bfc73630751363ce27204792b88b1cd95d4da19c03833501921a",
+      "targets": [
+        "instructions/browser-shared/capabilities/browser/viewport.md",
+        "skills/lcu/references/browser-shared/capabilities/browser/viewport.md"
+      ],
+      "edits": [],
+      "output_sha256": "c9857bf5aae8bfc73630751363ce27204792b88b1cd95d4da19c03833501921a"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/dist/lib/js/oai_js_browser/dist/skill/references/capabilities/browser/visibility.md",
+      "sha256": "8cb1588084cd3372ffc78b8c500dfa2f359d8a63a3c250f014fd55fad7336b08",
+      "targets": [
+        "instructions/browser-shared/capabilities/browser/visibility.md",
+        "skills/lcu/references/browser-shared/capabilities/browser/visibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "8cb1588084cd3372ffc78b8c500dfa2f359d8a63a3c250f014fd55fad7336b08"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/dist/lib/js/oai_js_browser/dist/skill/references/capabilities/tab/botDetection.md",
+      "sha256": "9e76653ad5e5dfe82392e929c30f8d2826b2a35a6ee9d25b3e52e7c797e94559",
+      "targets": [
+        "instructions/browser-shared/capabilities/tab/botDetection.md",
+        "skills/lcu/references/browser-shared/capabilities/tab/botDetection.md"
+      ],
+      "edits": [],
+      "output_sha256": "9e76653ad5e5dfe82392e929c30f8d2826b2a35a6ee9d25b3e52e7c797e94559"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/dist/lib/js/oai_js_browser/dist/skill/references/capabilities/tab/browserAuth.md",
+      "sha256": "e609790fc71260c967293cbdce7a2177e3f361cac6f6d2e5221cd3b8f52c6f7e",
+      "targets": [
+        "instructions/browser-shared/capabilities/tab/browserAuth.md",
+        "skills/lcu/references/browser-shared/capabilities/tab/browserAuth.md"
+      ],
+      "edits": [],
+      "output_sha256": "e609790fc71260c967293cbdce7a2177e3f361cac6f6d2e5221cd3b8f52c6f7e"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/dist/lib/js/oai_js_browser/dist/skill/references/capabilities/tab/cdp.md",
+      "sha256": "8e4d8cc937b7213d9c946f082762e31ece226b05ff42e49e535841c7209ac9a6",
+      "targets": [
+        "instructions/browser-shared/capabilities/tab/cdp.md",
+        "skills/lcu/references/browser-shared/capabilities/tab/cdp.md"
+      ],
+      "edits": [],
+      "output_sha256": "8e4d8cc937b7213d9c946f082762e31ece226b05ff42e49e535841c7209ac9a6"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/dist/lib/js/oai_js_browser/dist/skill/references/capabilities/tab/pageAssets.md",
+      "sha256": "aab1c766aa79202adcb79bb5539820b13f2f5ef5487a304fcf11ad74bbed06bc",
+      "targets": [
+        "instructions/browser-shared/capabilities/tab/pageAssets.md",
+        "skills/lcu/references/browser-shared/capabilities/tab/pageAssets.md"
+      ],
+      "edits": [],
+      "output_sha256": "aab1c766aa79202adcb79bb5539820b13f2f5ef5487a304fcf11ad74bbed06bc"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/dist/lib/js/oai_js_browser/dist/skill/references/documents.json",
+      "sha256": "5a17e1774c3cdc2a8ac4fb48ac50276ac19a92506133c0aa552246be956b7a72",
+      "targets": [
+        "instructions/browser-shared/documents.json",
+        "skills/lcu/references/browser-shared/documents.json"
+      ],
+      "edits": [],
+      "output_sha256": "5a17e1774c3cdc2a8ac4fb48ac50276ac19a92506133c0aa552246be956b7a72"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/dist/lib/js/oai_js_browser/dist/skill/references/file-uploads.md",
+      "sha256": "be58df64881903636d16bb11f65e98c8e77f34b82a2d27566df320284c9d37f6",
+      "targets": [
+        "instructions/browser-shared/file-uploads.md",
+        "skills/lcu/references/browser-shared/file-uploads.md"
+      ],
+      "edits": [],
+      "output_sha256": "be58df64881903636d16bb11f65e98c8e77f34b82a2d27566df320284c9d37f6"
+    },
+    {
+      "scope": "modules",
+      "source": "@oai/cua/dist/lib/js/oai_js_browser/dist/skill/references/visibility.md",
+      "sha256": "7cb1870c425f6b80521722fe5091a76328d53c41bca69705277231e815610ed0",
+      "targets": [
+        "instructions/browser-shared/visibility.md",
+        "skills/lcu/references/browser-shared/visibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "7cb1870c425f6b80521722fe5091a76328d53c41bca69705277231e815610ed0"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/accessibility.md",
+      "sha256": "c0722e52ccd697b5622c1cd145ffde97ba1f096eeaf0b0f09a9e2be76e03e3f3",
+      "targets": [
+        "instructions/plugins/browser/docs/accessibility.md",
+        "skills/lcu/references/plugins/browser/docs/accessibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "c0722e52ccd697b5622c1cd145ffde97ba1f096eeaf0b0f09a9e2be76e03e3f3"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/api-use-behavior.md",
+      "sha256": "9c648a2cbd94ada50bd855c5e9cb1ff2f33f6a2eff5d450d4b310fde336ec256",
+      "targets": [
+        "instructions/plugins/browser/docs/api-use-behavior.md",
+        "skills/lcu/references/plugins/browser/docs/api-use-behavior.md"
+      ],
+      "edits": [],
+      "output_sha256": "9c648a2cbd94ada50bd855c5e9cb1ff2f33f6a2eff5d450d4b310fde336ec256"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/api.json",
+      "sha256": "b773578792f67eb84c6d3ab7c2c8e11295f7006d981a00e90fade7a3627e06b0",
+      "targets": [
+        "instructions/plugins/browser/docs/api.json",
+        "skills/lcu/references/plugins/browser/docs/api.json"
+      ],
+      "edits": [],
+      "output_sha256": "b773578792f67eb84c6d3ab7c2c8e11295f7006d981a00e90fade7a3627e06b0"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/bootstrap-troubleshooting.md",
+      "sha256": "bbf69be0ecff6b45e70a71d96487a6932426b3377df389ec7376107e8c1e0416",
+      "targets": [
+        "instructions/plugins/browser/docs/bootstrap-troubleshooting.md",
+        "skills/lcu/references/plugins/browser/docs/bootstrap-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "bbf69be0ecff6b45e70a71d96487a6932426b3377df389ec7376107e8c1e0416"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/browser-control-interruption.md",
+      "sha256": "2fd73066304bc822ce3fba35eeba6456a0505f32f2f1364424639a08e49d1d5a",
+      "targets": [
+        "instructions/plugins/browser/docs/browser-control-interruption.md",
+        "skills/lcu/references/plugins/browser/docs/browser-control-interruption.md"
+      ],
+      "edits": [],
+      "output_sha256": "2fd73066304bc822ce3fba35eeba6456a0505f32f2f1364424639a08e49d1d5a"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/browser-safety.md",
+      "sha256": "1d34bbfd82e75deaeaac667eed6c4df211568a358d9e99d94f4d444614964da8",
+      "targets": [
+        "instructions/plugins/browser/docs/browser-safety.md",
+        "skills/lcu/references/plugins/browser/docs/browser-safety.md"
+      ],
+      "edits": [],
+      "output_sha256": "1d34bbfd82e75deaeaac667eed6c4df211568a358d9e99d94f4d444614964da8"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/browser-troubleshooting.md",
+      "sha256": "76ca57503fc2b11c602ad090326b6f0fec2d037826ec828607945f4c333b206b",
+      "targets": [
+        "instructions/plugins/browser/docs/browser-troubleshooting.md",
+        "skills/lcu/references/plugins/browser/docs/browser-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "76ca57503fc2b11c602ad090326b6f0fec2d037826ec828607945f4c333b206b"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/capabilities/browser/management.md",
+      "sha256": "c7718517d2e1db86b07f9b26e9f66c268e6f0e632ec2e204ec945c4cb2bd353e",
+      "targets": [
+        "instructions/plugins/browser/docs/capabilities/browser/management.md",
+        "skills/lcu/references/plugins/browser/docs/capabilities/browser/management.md"
+      ],
+      "edits": [],
+      "output_sha256": "c7718517d2e1db86b07f9b26e9f66c268e6f0e632ec2e204ec945c4cb2bd353e"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/capabilities/browser/viewport.md",
+      "sha256": "c9857bf5aae8bfc73630751363ce27204792b88b1cd95d4da19c03833501921a",
+      "targets": [
+        "instructions/plugins/browser/docs/capabilities/browser/viewport.md",
+        "skills/lcu/references/plugins/browser/docs/capabilities/browser/viewport.md"
+      ],
+      "edits": [],
+      "output_sha256": "c9857bf5aae8bfc73630751363ce27204792b88b1cd95d4da19c03833501921a"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/capabilities/browser/visibility.md",
+      "sha256": "8cb1588084cd3372ffc78b8c500dfa2f359d8a63a3c250f014fd55fad7336b08",
+      "targets": [
+        "instructions/plugins/browser/docs/capabilities/browser/visibility.md",
+        "skills/lcu/references/plugins/browser/docs/capabilities/browser/visibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "8cb1588084cd3372ffc78b8c500dfa2f359d8a63a3c250f014fd55fad7336b08"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/capabilities/tab/botDetection.md",
+      "sha256": "9e76653ad5e5dfe82392e929c30f8d2826b2a35a6ee9d25b3e52e7c797e94559",
+      "targets": [
+        "instructions/plugins/browser/docs/capabilities/tab/botDetection.md",
+        "skills/lcu/references/plugins/browser/docs/capabilities/tab/botDetection.md"
+      ],
+      "edits": [],
+      "output_sha256": "9e76653ad5e5dfe82392e929c30f8d2826b2a35a6ee9d25b3e52e7c797e94559"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/capabilities/tab/browserAuth.md",
+      "sha256": "e609790fc71260c967293cbdce7a2177e3f361cac6f6d2e5221cd3b8f52c6f7e",
+      "targets": [
+        "instructions/plugins/browser/docs/capabilities/tab/browserAuth.md",
+        "skills/lcu/references/plugins/browser/docs/capabilities/tab/browserAuth.md"
+      ],
+      "edits": [],
+      "output_sha256": "e609790fc71260c967293cbdce7a2177e3f361cac6f6d2e5221cd3b8f52c6f7e"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/capabilities/tab/cdp.md",
+      "sha256": "8e4d8cc937b7213d9c946f082762e31ece226b05ff42e49e535841c7209ac9a6",
+      "targets": [
+        "instructions/plugins/browser/docs/capabilities/tab/cdp.md",
+        "skills/lcu/references/plugins/browser/docs/capabilities/tab/cdp.md"
+      ],
+      "edits": [],
+      "output_sha256": "8e4d8cc937b7213d9c946f082762e31ece226b05ff42e49e535841c7209ac9a6"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/capabilities/tab/pageAssets.md",
+      "sha256": "aab1c766aa79202adcb79bb5539820b13f2f5ef5487a304fcf11ad74bbed06bc",
+      "targets": [
+        "instructions/plugins/browser/docs/capabilities/tab/pageAssets.md",
+        "skills/lcu/references/plugins/browser/docs/capabilities/tab/pageAssets.md"
+      ],
+      "edits": [],
+      "output_sha256": "aab1c766aa79202adcb79bb5539820b13f2f5ef5487a304fcf11ad74bbed06bc"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/chrome-file-upload-troubleshooting.md",
+      "sha256": "fe75442ac53d6a0fe5e45712e86d2ab0d40318b113d0c74121f4bb84e9460182",
+      "targets": [
+        "instructions/plugins/browser/docs/chrome-file-upload-troubleshooting.md",
+        "skills/lcu/references/plugins/browser/docs/chrome-file-upload-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "fe75442ac53d6a0fe5e45712e86d2ab0d40318b113d0c74121f4bb84e9460182"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/chrome-troubleshooting.md",
+      "sha256": "70b27f1b1331e81653b0bcb0c84b91ee7e884304bb7a2c6d5df60133df482580",
+      "targets": [
+        "instructions/plugins/browser/docs/chrome-troubleshooting.md",
+        "skills/lcu/references/plugins/browser/docs/chrome-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "70b27f1b1331e81653b0bcb0c84b91ee7e884304bb7a2c6d5df60133df482580"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/confirmations.md",
+      "sha256": "5897041e3b121ac9193d69eac9d46e74c4eb3a77a5aa5f0e2dd06c0d5d22a458",
+      "targets": [
+        "instructions/plugins/browser/docs/confirmations.md",
+        "skills/lcu/references/plugins/browser/docs/confirmations.md"
+      ],
+      "edits": [],
+      "output_sha256": "5897041e3b121ac9193d69eac9d46e74c4eb3a77a5aa5f0e2dd06c0d5d22a458"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/documents.json",
+      "sha256": "92a95c6bcc8836ab3c2f15b9e7d0a36247682dda6807fd9fe0945f1be2e7a91b",
+      "targets": [
+        "instructions/plugins/browser/docs/documents.json",
+        "skills/lcu/references/plugins/browser/docs/documents.json"
+      ],
+      "edits": [],
+      "output_sha256": "92a95c6bcc8836ab3c2f15b9e7d0a36247682dda6807fd9fe0945f1be2e7a91b"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/file-uploads.md",
+      "sha256": "be58df64881903636d16bb11f65e98c8e77f34b82a2d27566df320284c9d37f6",
+      "targets": [
+        "instructions/plugins/browser/docs/file-uploads.md",
+        "skills/lcu/references/plugins/browser/docs/file-uploads.md"
+      ],
+      "edits": [],
+      "output_sha256": "be58df64881903636d16bb11f65e98c8e77f34b82a2d27566df320284c9d37f6"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/local-web-development.md",
+      "sha256": "0bc8a4455b4469e17bd4cfd5192d90d079fcaa9894fbd763552281117535a32c",
+      "targets": [
+        "instructions/plugins/browser/docs/local-web-development.md",
+        "skills/lcu/references/plugins/browser/docs/local-web-development.md"
+      ],
+      "edits": [],
+      "output_sha256": "0bc8a4455b4469e17bd4cfd5192d90d079fcaa9894fbd763552281117535a32c"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/screenshots.md",
+      "sha256": "94cb633f79c309fdd84f14dac790d4ffa1b4bf20a2b6643e4e6111ba1c676cc4",
+      "targets": [
+        "instructions/plugins/browser/docs/screenshots.md",
+        "skills/lcu/references/plugins/browser/docs/screenshots.md"
+      ],
+      "edits": [],
+      "output_sha256": "94cb633f79c309fdd84f14dac790d4ffa1b4bf20a2b6643e4e6111ba1c676cc4"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/session-naming.md",
+      "sha256": "385cfcc20ff5778b81c59f218152381f65c9fd4ad0970bb59c847a009726a003",
+      "targets": [
+        "instructions/plugins/browser/docs/session-naming.md",
+        "skills/lcu/references/plugins/browser/docs/session-naming.md"
+      ],
+      "edits": [],
+      "output_sha256": "385cfcc20ff5778b81c59f218152381f65c9fd4ad0970bb59c847a009726a003"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/tab-claiming-chrome.md",
+      "sha256": "58bdb8d36284eb72e7ed8b1099e83acc01880df4cecebbc8a5c34c7f567fcc33",
+      "targets": [
+        "instructions/plugins/browser/docs/tab-claiming-chrome.md",
+        "skills/lcu/references/plugins/browser/docs/tab-claiming-chrome.md"
+      ],
+      "edits": [],
+      "output_sha256": "58bdb8d36284eb72e7ed8b1099e83acc01880df4cecebbc8a5c34c7f567fcc33"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/tab-cleanup-chrome.md",
+      "sha256": "636f80eef8b88a734cb3ba8a20cb0d1cca034d2833066addf04807d143c79be2",
+      "targets": [
+        "instructions/plugins/browser/docs/tab-cleanup-chrome.md",
+        "skills/lcu/references/plugins/browser/docs/tab-cleanup-chrome.md"
+      ],
+      "edits": [],
+      "output_sha256": "636f80eef8b88a734cb3ba8a20cb0d1cca034d2833066addf04807d143c79be2"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/tab-cleanup-iab.md",
+      "sha256": "23593b4f6d3828ffbbd88bb8322c8c135957d5d01c219b7e431478c565772b74",
+      "targets": [
+        "instructions/plugins/browser/docs/tab-cleanup-iab.md",
+        "skills/lcu/references/plugins/browser/docs/tab-cleanup-iab.md"
+      ],
+      "edits": [],
+      "output_sha256": "23593b4f6d3828ffbbd88bb8322c8c135957d5d01c219b7e431478c565772b74"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/tab-mentions-iab.md",
+      "sha256": "10a36c2bd1b856c1b594fc36b5280f2cad5391be971ba8a5b834924fa76763cb",
+      "targets": [
+        "instructions/plugins/browser/docs/tab-mentions-iab.md",
+        "skills/lcu/references/plugins/browser/docs/tab-mentions-iab.md"
+      ],
+      "edits": [],
+      "output_sha256": "10a36c2bd1b856c1b594fc36b5280f2cad5391be971ba8a5b834924fa76763cb"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/visibility.md",
+      "sha256": "7cb1870c425f6b80521722fe5091a76328d53c41bca69705277231e815610ed0",
+      "targets": [
+        "instructions/plugins/browser/docs/visibility.md",
+        "skills/lcu/references/plugins/browser/docs/visibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "7cb1870c425f6b80521722fe5091a76328d53c41bca69705277231e815610ed0"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/docs/webmcp.md",
+      "sha256": "58222da9e228ef36bed3c293daee5cb62e9c3040fe8e017a7608e462c1c44dfc",
+      "targets": [
+        "instructions/plugins/browser/docs/webmcp.md",
+        "skills/lcu/references/plugins/browser/docs/webmcp.md"
+      ],
+      "edits": [],
+      "output_sha256": "58222da9e228ef36bed3c293daee5cb62e9c3040fe8e017a7608e462c1c44dfc"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/accessibility.md",
+      "sha256": "c0722e52ccd697b5622c1cd145ffde97ba1f096eeaf0b0f09a9e2be76e03e3f3",
+      "targets": [
+        "instructions/plugins/chrome/docs/accessibility.md",
+        "skills/lcu/references/plugins/chrome/docs/accessibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "c0722e52ccd697b5622c1cd145ffde97ba1f096eeaf0b0f09a9e2be76e03e3f3"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/api-use-behavior.md",
+      "sha256": "9c648a2cbd94ada50bd855c5e9cb1ff2f33f6a2eff5d450d4b310fde336ec256",
+      "targets": [
+        "instructions/plugins/chrome/docs/api-use-behavior.md",
+        "skills/lcu/references/plugins/chrome/docs/api-use-behavior.md"
+      ],
+      "edits": [],
+      "output_sha256": "9c648a2cbd94ada50bd855c5e9cb1ff2f33f6a2eff5d450d4b310fde336ec256"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/api.json",
+      "sha256": "b773578792f67eb84c6d3ab7c2c8e11295f7006d981a00e90fade7a3627e06b0",
+      "targets": [
+        "instructions/plugins/chrome/docs/api.json",
+        "skills/lcu/references/plugins/chrome/docs/api.json"
+      ],
+      "edits": [],
+      "output_sha256": "b773578792f67eb84c6d3ab7c2c8e11295f7006d981a00e90fade7a3627e06b0"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/bootstrap-troubleshooting.md",
+      "sha256": "bbf69be0ecff6b45e70a71d96487a6932426b3377df389ec7376107e8c1e0416",
+      "targets": [
+        "instructions/plugins/chrome/docs/bootstrap-troubleshooting.md",
+        "skills/lcu/references/plugins/chrome/docs/bootstrap-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "bbf69be0ecff6b45e70a71d96487a6932426b3377df389ec7376107e8c1e0416"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/browser-control-interruption.md",
+      "sha256": "2fd73066304bc822ce3fba35eeba6456a0505f32f2f1364424639a08e49d1d5a",
+      "targets": [
+        "instructions/plugins/chrome/docs/browser-control-interruption.md",
+        "skills/lcu/references/plugins/chrome/docs/browser-control-interruption.md"
+      ],
+      "edits": [],
+      "output_sha256": "2fd73066304bc822ce3fba35eeba6456a0505f32f2f1364424639a08e49d1d5a"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/browser-safety.md",
+      "sha256": "1d34bbfd82e75deaeaac667eed6c4df211568a358d9e99d94f4d444614964da8",
+      "targets": [
+        "instructions/plugins/chrome/docs/browser-safety.md",
+        "skills/lcu/references/plugins/chrome/docs/browser-safety.md"
+      ],
+      "edits": [],
+      "output_sha256": "1d34bbfd82e75deaeaac667eed6c4df211568a358d9e99d94f4d444614964da8"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/browser-troubleshooting.md",
+      "sha256": "76ca57503fc2b11c602ad090326b6f0fec2d037826ec828607945f4c333b206b",
+      "targets": [
+        "instructions/plugins/chrome/docs/browser-troubleshooting.md",
+        "skills/lcu/references/plugins/chrome/docs/browser-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "76ca57503fc2b11c602ad090326b6f0fec2d037826ec828607945f4c333b206b"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/capabilities/browser/management.md",
+      "sha256": "c7718517d2e1db86b07f9b26e9f66c268e6f0e632ec2e204ec945c4cb2bd353e",
+      "targets": [
+        "instructions/plugins/chrome/docs/capabilities/browser/management.md",
+        "skills/lcu/references/plugins/chrome/docs/capabilities/browser/management.md"
+      ],
+      "edits": [],
+      "output_sha256": "c7718517d2e1db86b07f9b26e9f66c268e6f0e632ec2e204ec945c4cb2bd353e"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/capabilities/browser/viewport.md",
+      "sha256": "c9857bf5aae8bfc73630751363ce27204792b88b1cd95d4da19c03833501921a",
+      "targets": [
+        "instructions/plugins/chrome/docs/capabilities/browser/viewport.md",
+        "skills/lcu/references/plugins/chrome/docs/capabilities/browser/viewport.md"
+      ],
+      "edits": [],
+      "output_sha256": "c9857bf5aae8bfc73630751363ce27204792b88b1cd95d4da19c03833501921a"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/capabilities/browser/visibility.md",
+      "sha256": "8cb1588084cd3372ffc78b8c500dfa2f359d8a63a3c250f014fd55fad7336b08",
+      "targets": [
+        "instructions/plugins/chrome/docs/capabilities/browser/visibility.md",
+        "skills/lcu/references/plugins/chrome/docs/capabilities/browser/visibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "8cb1588084cd3372ffc78b8c500dfa2f359d8a63a3c250f014fd55fad7336b08"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/capabilities/tab/botDetection.md",
+      "sha256": "9e76653ad5e5dfe82392e929c30f8d2826b2a35a6ee9d25b3e52e7c797e94559",
+      "targets": [
+        "instructions/plugins/chrome/docs/capabilities/tab/botDetection.md",
+        "skills/lcu/references/plugins/chrome/docs/capabilities/tab/botDetection.md"
+      ],
+      "edits": [],
+      "output_sha256": "9e76653ad5e5dfe82392e929c30f8d2826b2a35a6ee9d25b3e52e7c797e94559"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/capabilities/tab/browserAuth.md",
+      "sha256": "e609790fc71260c967293cbdce7a2177e3f361cac6f6d2e5221cd3b8f52c6f7e",
+      "targets": [
+        "instructions/plugins/chrome/docs/capabilities/tab/browserAuth.md",
+        "skills/lcu/references/plugins/chrome/docs/capabilities/tab/browserAuth.md"
+      ],
+      "edits": [],
+      "output_sha256": "e609790fc71260c967293cbdce7a2177e3f361cac6f6d2e5221cd3b8f52c6f7e"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/capabilities/tab/cdp.md",
+      "sha256": "8e4d8cc937b7213d9c946f082762e31ece226b05ff42e49e535841c7209ac9a6",
+      "targets": [
+        "instructions/plugins/chrome/docs/capabilities/tab/cdp.md",
+        "skills/lcu/references/plugins/chrome/docs/capabilities/tab/cdp.md"
+      ],
+      "edits": [],
+      "output_sha256": "8e4d8cc937b7213d9c946f082762e31ece226b05ff42e49e535841c7209ac9a6"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/capabilities/tab/pageAssets.md",
+      "sha256": "aab1c766aa79202adcb79bb5539820b13f2f5ef5487a304fcf11ad74bbed06bc",
+      "targets": [
+        "instructions/plugins/chrome/docs/capabilities/tab/pageAssets.md",
+        "skills/lcu/references/plugins/chrome/docs/capabilities/tab/pageAssets.md"
+      ],
+      "edits": [],
+      "output_sha256": "aab1c766aa79202adcb79bb5539820b13f2f5ef5487a304fcf11ad74bbed06bc"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/chrome-file-upload-troubleshooting.md",
+      "sha256": "fe75442ac53d6a0fe5e45712e86d2ab0d40318b113d0c74121f4bb84e9460182",
+      "targets": [
+        "instructions/plugins/chrome/docs/chrome-file-upload-troubleshooting.md",
+        "skills/lcu/references/plugins/chrome/docs/chrome-file-upload-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "fe75442ac53d6a0fe5e45712e86d2ab0d40318b113d0c74121f4bb84e9460182"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/chrome-troubleshooting.md",
+      "sha256": "70b27f1b1331e81653b0bcb0c84b91ee7e884304bb7a2c6d5df60133df482580",
+      "targets": [
+        "instructions/plugins/chrome/docs/chrome-troubleshooting.md",
+        "skills/lcu/references/plugins/chrome/docs/chrome-troubleshooting.md"
+      ],
+      "edits": [],
+      "output_sha256": "70b27f1b1331e81653b0bcb0c84b91ee7e884304bb7a2c6d5df60133df482580"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/confirmations.md",
+      "sha256": "5897041e3b121ac9193d69eac9d46e74c4eb3a77a5aa5f0e2dd06c0d5d22a458",
+      "targets": [
+        "instructions/plugins/chrome/docs/confirmations.md",
+        "skills/lcu/references/plugins/chrome/docs/confirmations.md"
+      ],
+      "edits": [],
+      "output_sha256": "5897041e3b121ac9193d69eac9d46e74c4eb3a77a5aa5f0e2dd06c0d5d22a458"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/documents.json",
+      "sha256": "92a95c6bcc8836ab3c2f15b9e7d0a36247682dda6807fd9fe0945f1be2e7a91b",
+      "targets": [
+        "instructions/plugins/chrome/docs/documents.json",
+        "skills/lcu/references/plugins/chrome/docs/documents.json"
+      ],
+      "edits": [],
+      "output_sha256": "92a95c6bcc8836ab3c2f15b9e7d0a36247682dda6807fd9fe0945f1be2e7a91b"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/file-uploads.md",
+      "sha256": "be58df64881903636d16bb11f65e98c8e77f34b82a2d27566df320284c9d37f6",
+      "targets": [
+        "instructions/plugins/chrome/docs/file-uploads.md",
+        "skills/lcu/references/plugins/chrome/docs/file-uploads.md"
+      ],
+      "edits": [],
+      "output_sha256": "be58df64881903636d16bb11f65e98c8e77f34b82a2d27566df320284c9d37f6"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/local-web-development.md",
+      "sha256": "0bc8a4455b4469e17bd4cfd5192d90d079fcaa9894fbd763552281117535a32c",
+      "targets": [
+        "instructions/plugins/chrome/docs/local-web-development.md",
+        "skills/lcu/references/plugins/chrome/docs/local-web-development.md"
+      ],
+      "edits": [],
+      "output_sha256": "0bc8a4455b4469e17bd4cfd5192d90d079fcaa9894fbd763552281117535a32c"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/screenshots.md",
+      "sha256": "94cb633f79c309fdd84f14dac790d4ffa1b4bf20a2b6643e4e6111ba1c676cc4",
+      "targets": [
+        "instructions/plugins/chrome/docs/screenshots.md",
+        "skills/lcu/references/plugins/chrome/docs/screenshots.md"
+      ],
+      "edits": [],
+      "output_sha256": "94cb633f79c309fdd84f14dac790d4ffa1b4bf20a2b6643e4e6111ba1c676cc4"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/session-naming.md",
+      "sha256": "385cfcc20ff5778b81c59f218152381f65c9fd4ad0970bb59c847a009726a003",
+      "targets": [
+        "instructions/plugins/chrome/docs/session-naming.md",
+        "skills/lcu/references/plugins/chrome/docs/session-naming.md"
+      ],
+      "edits": [],
+      "output_sha256": "385cfcc20ff5778b81c59f218152381f65c9fd4ad0970bb59c847a009726a003"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/tab-claiming-chrome.md",
+      "sha256": "58bdb8d36284eb72e7ed8b1099e83acc01880df4cecebbc8a5c34c7f567fcc33",
+      "targets": [
+        "instructions/plugins/chrome/docs/tab-claiming-chrome.md",
+        "skills/lcu/references/plugins/chrome/docs/tab-claiming-chrome.md"
+      ],
+      "edits": [],
+      "output_sha256": "58bdb8d36284eb72e7ed8b1099e83acc01880df4cecebbc8a5c34c7f567fcc33"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/tab-cleanup-chrome.md",
+      "sha256": "636f80eef8b88a734cb3ba8a20cb0d1cca034d2833066addf04807d143c79be2",
+      "targets": [
+        "instructions/plugins/chrome/docs/tab-cleanup-chrome.md",
+        "skills/lcu/references/plugins/chrome/docs/tab-cleanup-chrome.md"
+      ],
+      "edits": [],
+      "output_sha256": "636f80eef8b88a734cb3ba8a20cb0d1cca034d2833066addf04807d143c79be2"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/tab-cleanup-iab.md",
+      "sha256": "23593b4f6d3828ffbbd88bb8322c8c135957d5d01c219b7e431478c565772b74",
+      "targets": [
+        "instructions/plugins/chrome/docs/tab-cleanup-iab.md",
+        "skills/lcu/references/plugins/chrome/docs/tab-cleanup-iab.md"
+      ],
+      "edits": [],
+      "output_sha256": "23593b4f6d3828ffbbd88bb8322c8c135957d5d01c219b7e431478c565772b74"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/tab-mentions-iab.md",
+      "sha256": "10a36c2bd1b856c1b594fc36b5280f2cad5391be971ba8a5b834924fa76763cb",
+      "targets": [
+        "instructions/plugins/chrome/docs/tab-mentions-iab.md",
+        "skills/lcu/references/plugins/chrome/docs/tab-mentions-iab.md"
+      ],
+      "edits": [],
+      "output_sha256": "10a36c2bd1b856c1b594fc36b5280f2cad5391be971ba8a5b834924fa76763cb"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/visibility.md",
+      "sha256": "7cb1870c425f6b80521722fe5091a76328d53c41bca69705277231e815610ed0",
+      "targets": [
+        "instructions/plugins/chrome/docs/visibility.md",
+        "skills/lcu/references/plugins/chrome/docs/visibility.md"
+      ],
+      "edits": [],
+      "output_sha256": "7cb1870c425f6b80521722fe5091a76328d53c41bca69705277231e815610ed0"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/docs/webmcp.md",
+      "sha256": "58222da9e228ef36bed3c293daee5cb62e9c3040fe8e017a7608e462c1c44dfc",
+      "targets": [
+        "instructions/plugins/chrome/docs/webmcp.md",
+        "skills/lcu/references/plugins/chrome/docs/webmcp.md"
+      ],
+      "edits": [],
+      "output_sha256": "58222da9e228ef36bed3c293daee5cb62e9c3040fe8e017a7608e462c1c44dfc"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/skills/control-in-app-browser/SKILL.md",
+      "sha256": "7601b890ec7640edf9b20658bb16ee11db2e3194e8aab3d9c622a77e214e58e4",
+      "targets": [
+        "instructions/plugins/browser/skills/control-in-app-browser/SKILL.md",
+        "skills/lcu/references/plugins/in-app-browser.md"
+      ],
+      "edits": [],
+      "output_sha256": "7601b890ec7640edf9b20658bb16ee11db2e3194e8aab3d9c622a77e214e58e4"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/browser/skills/control-in-app-browser/agents/openai.yaml",
+      "sha256": "d77dc93b1e30ddf12edf8c6fd81a04bd84c969fc8acac4ac50a17bd51dfc3813",
+      "targets": [
+        "instructions/plugins/browser/skills/control-in-app-browser/agents/openai.yaml"
+      ],
+      "edits": [],
+      "output_sha256": "d77dc93b1e30ddf12edf8c6fd81a04bd84c969fc8acac4ac50a17bd51dfc3813"
+    },
+    {
+      "scope": "resources",
+      "source": "plugins/openai-bundled/plugins/chrome/skills/control-chrome/SKILL.md",
+      "sha256": "1feea4e66626fbe423f8ecabfa49639c803c5a2613052d5ded8ae2166010184b",
+      "targets": [
+        "instructions/plugins/chrome/skills/control-chrome/SKILL.md",
+        "skills/lcu/references/plugins/chrome.md"
+      ],
+      "edits": [],
+      "output_sha256": "1feea4e66626fbe423f8ecabfa49639c803c5a2613052d5ded8ae2166010184b"
+    }
+  ]
+}

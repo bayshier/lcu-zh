@@ -1,0 +1,31 @@
+#!/bin/sh
+# Run the ChatGPT app's own Node on lcu/sandbox_shim.mjs (lcu-codex-sandbox). Contract: docs/REMOVE-PYTHON.md, "Launcher contract".
+self=$0
+while [ -L "$self" ]; do
+  link=$(readlink -- "$self") || break
+  case $link in
+    /*) self=$link ;;
+    *) case $self in */*) self=${self%/*}/$link ;; *) self=$link ;; esac ;;
+  esac
+done
+case $self in */*) root=${self%/*}/.. ;; *) root=.. ;; esac
+# A release's recorded Node always wins; LCU_NODE is only for a tree without node-path (a source checkout).
+if [ -f "$root/node-path" ]; then
+  node=
+  [ -r "$root/node-path" ] && { IFS= read -r node < "$root/node-path" || :; }
+else
+  node=${LCU_NODE-}
+fi
+if [ -z "$node" ] || [ ! -f "$node" ] || [ ! -x "$node" ]; then
+  if [ -f "$root/node-path" ] && [ ! -r "$root/node-path" ]; then
+    printf 'LCU: cannot read %s. Reinstall LCU.\n' "$root/node-path" >&2
+  elif [ -f "$root/node-path" ]; then
+    printf 'LCU: the ChatGPT app'\''s Node (%s) is missing or not executable. Repair or update the ChatGPT app, then reinstall LCU.\n' "$node" >&2
+  elif [ -n "$node" ]; then
+    printf 'LCU: LCU_NODE (%s) is not an executable file.\n' "$node" >&2
+  else
+    printf 'LCU: this LCU tree records no Node (node-path) and LCU_NODE is not set. Reinstall LCU, or set LCU_NODE in a source checkout.\n' >&2
+  fi
+  exit 1
+fi
+exec "$node" "$root/lcu/sandbox_shim.mjs" "$@"

@@ -1,0 +1,21 @@
+# Superseded three-platform delivery, 2026-09-25
+
+Superseded by the [corrected current delivery](final-three-delivery-relay-startup-fix-2026-09-25.md). Source `29a81a3` passed the archive audits and offline gates recorded below, but a later installed Claude launch proved its relay entrypoint silently exited when Node resolved `import.meta.url` through the `current` symlink while preserving that symlink path in `process.argv[1]`. The 29a archives therefore do not establish a working installed relay. Their local tarballs were later pruned after recording the hashes below; the gate logs remain available in `/private/tmp`.
+
+The three archives were built from clean source commit `29a81a36304586a8b59dca0840dcdc1bb223f063` into `dist/29a81a36304586a8b59dca0840dcdc1bb223f063/final/`. `source.sha`, per-archive sidecars, and `archives.sha256` identify the files. Source-member, installed-document-link, no-upstream-payload, sidecar, and extracted-bundle-seal audits passed for all three archives.
+
+| Archive | SHA-256 |
+| --- | --- |
+| `dist/29a81a36304586a8b59dca0840dcdc1bb223f063/final/darwin-arm64/lcu-0.3.0-darwin-arm64.tar.gz` | `270677f13af4d12e651ccd8838dbf0b2a0740aa2b521a5accf6f3abfb7badfbc` |
+| `dist/29a81a36304586a8b59dca0840dcdc1bb223f063/final/linux-arm64/lcu-0.3.0-linux-arm64.tar.gz` | `050f31541ee6abd0ac8e334db35dffc758472cbde5f6c84e62efc73759758590` |
+| `dist/29a81a36304586a8b59dca0840dcdc1bb223f063/final/linux-x64/lcu-0.3.0-linux-x64.tar.gz` | `b3fb1e59e780c7159b5cda1785761ffb4d7f37a1accaa4b5b026f78818146b0c` |
+
+Both Linux archives passed the offline gate in serial, disposable containers with `--network none` and the locally cached official runtime packages. Each run passed **144 Python tests**, the generic exported MCP contract, registration and scope checks for Codex CLI, Claude Code, and Pi, setup idempotency and ownership checks, and the GTK action suite with its independent save oracle. The x86-64 run used Docker emulation on Apple Silicon. The gates used a separate immutable test snapshot at `9c934579b05db77bb1bc6ca9110dce6acb3acc99`; relative to archive source `29a81a3`, it changes only `tests/registration.py` and `tests/test_windows_setup.py` to match the shipped relay command and include the relay in the Windows setup fixture. No shipped source changed, so the gates tested the already-built archives without rebuilding them.
+
+Full logs and SHA-256 sidecars are `/private/tmp/lcu-final-29a81a3-arm64-test-9c93457.log` (`1c68c181958182c932e5d39b0dc6ad900ff4e1b5073826639839898acc122461`) and `/private/tmp/lcu-final-29a81a3-x64-test-9c93457.log` (`097a8c032477d3fbbc8f83d4015c216d2c0281c01636da6edd804a3dbd80112b`). All three hashes in `archives.sha256` verified after the gates.
+
+The superseded `60d0a9bf30d38752997ff511739c03433f72b60d` archive candidates were rejected because shipped `docs/ADAPTERS.md` linked to the unshipped SDK test source `adapters/test/claude.test.mjs`. Their Darwin, Linux ARM64, and Linux x86-64 hashes were respectively `d7a43cf46dd2496ccb91914220bcbb6458f1b4dc1b8ee616eb5ccae0671536e8`, `3726d25de511ace7442ccf6a7a6209cf241a8830470a058e62e40c6ebf248171`, and `6d6673f604efdccca3dd79ef423a021132d44f30ef4f02917cf103d7c8a17141`. The link was corrected in `29a81a3`.
+
+A first `29a81a3` build attempt used a helper that removed write bits from the tracked-mode snapshot before packaging. That changed archive modes; Python's `tarfile` `data` extraction filter normalized some modes and the seal check rejected the extracted ARM64 tree. Those discarded candidate hashes were Darwin `397d95d11375c724a20f04684fec553d7013ae5597afb80a58bcbf7427f2e1b7`, Linux ARM64 `97200ad95e8daac42115978d370c95cd5c0f5c33a2447775f71d725f8e12f62a`, and Linux x86-64 `60ab5c0ffdc5efbb4635d278f66dc1a94214a7011344ac9c24d775ed6fc80bd3`. Rebuilding from a normal-mode Git archive snapshot fixed the audit; the final archives above passed the standard extraction and seal checks. The earlier failed ARM64 gate also exposed two stale test fixtures, both corrected only in the test snapshot before the passing gates.
+
+These are local verification artifacts, not published releases. No Windows archive or Windows gate was produced in this delivery. The Darwin archive passed packaging and seal audits; it did not receive a new guest action test.

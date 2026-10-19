@@ -1,0 +1,9 @@
+{
+  "name": "lcu-approve",
+  "version": "0.5.0",
+  "description": "Native per-app approval for LCU computer use in the Claude app and Claude Code (Allow this conversation, Always allow, Deny), and the /computer-use-apps panel of approved apps.",
+  "author": {
+    "name": "LCU"
+  },
+  "types": "./types/index.d.ts"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "lcu-agent-installers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Upstream installers for registering LCU tools in coding agents and removing the skill earlier LCU versions registered.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amontlabs/lcu.git",
+    "directory": "scripts/agent-tools"
+  },
+  "dependencies": {
+    "skills": "1.7.0",
+    "add-mcp": "2.4.0"
+  }
+}
